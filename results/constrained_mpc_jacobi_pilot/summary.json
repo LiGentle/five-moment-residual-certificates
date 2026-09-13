@@ -1,0 +1,1148 @@
+{
+  "configurations": [
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 633.1311713043478,
+          "mean_products": 209.12608695652173,
+          "median_microseconds": 99.0835,
+          "median_products": 24.0,
+          "p95_microseconds": 1345.1833
+        },
+        "cg": {
+          "mean_microseconds": 21.860187826086957,
+          "mean_products": 4.769565217391304,
+          "median_microseconds": 18.3125,
+          "median_products": 4.0,
+          "p95_microseconds": 45.8981
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 629.9919939130434,
+          "mean_products": 209.20434782608694,
+          "median_microseconds": 97.312,
+          "median_products": 24.0,
+          "p95_microseconds": 1339.9519
+        },
+        "direct": {
+          "mean_microseconds": 9.263026956521738,
+          "mean_products": 0.0,
+          "median_microseconds": 7.7085,
+          "median_products": 0.0,
+          "p95_microseconds": 16.53094999999999
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 1058.143396521739,
+          "mean_products": 361.6391304347826,
+          "median_microseconds": 226.313,
+          "median_products": 79.0,
+          "p95_microseconds": 5498.031099999995
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 8535,
+        "median": 79.0,
+        "minimum": 12
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.5983415606859486,
+          "median_time_ratio_to_chebyshev": 0.4378162102928246,
+          "paired_strict_win_fraction": 0.4226086956521739
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.5953748763956875,
+          "median_time_ratio_to_chebyshev": 0.4299885556728955,
+          "paired_strict_win_fraction": 0.47130434782608693
+        }
+      },
+      "condition_number": {
+        "maximum": 21419428.825154737,
+        "median": 1796.325001329627,
+        "minimum": 38.65987897659204
+      },
+      "degree_two_acceptance_fraction": 0.3521739130434783,
+      "horizon": 20,
+      "newton_systems": 230,
+      "original_residual_diagnostics": {
+        "certificate": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.04959373517198734
+        },
+        "cg": {
+          "fraction_at_most_tolerance": 0.9,
+          "maximum": 0.0839295474246008
+        },
+        "cost_gated_certificate": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.04959373517198734
+        },
+        "direct": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 3.644074480797385e-15
+        },
+        "interval_chebyshev": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.04987834218481156
+        }
+      },
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 18202.521174999998,
+          "mean_total_products": 6012.375,
+          "median_total_microseconds": 16110.998,
+          "median_total_products": 5330.0
+        },
+        "cg": {
+          "mean_total_microseconds": 628.4804,
+          "mean_total_products": 137.125,
+          "median_total_microseconds": 633.7090000000001,
+          "median_total_products": 143.0
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 18112.269825000003,
+          "mean_total_products": 6014.625,
+          "median_total_microseconds": 16133.27,
+          "median_total_products": 5339.0
+        },
+        "direct": {
+          "mean_total_microseconds": 266.312025,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 285.54150000000004,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 30421.622649999998,
+          "mean_total_products": 10397.125,
+          "median_total_microseconds": 32300.853000000003,
+          "median_total_products": 11160.5
+        }
+      },
+      "plant": "double_integrator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 4.288958214108793,
+        "median": 1.4978134252596509
+      }
+    },
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 1072.6631417040358,
+          "mean_products": 352.6681614349776,
+          "median_microseconds": 322.375,
+          "median_products": 99.0,
+          "p95_microseconds": 1445.8874999999982
+        },
+        "cg": {
+          "mean_microseconds": 31.801073542600896,
+          "mean_products": 7.192825112107624,
+          "median_microseconds": 24.583,
+          "median_products": 5.0,
+          "p95_microseconds": 73.04209999999998
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 1067.8791417040359,
+          "mean_products": 352.6681614349776,
+          "median_microseconds": 318.375,
+          "median_products": 99.0,
+          "p95_microseconds": 1491.5331
+        },
+        "direct": {
+          "mean_microseconds": 17.325166816143497,
+          "mean_products": 0.0,
+          "median_microseconds": 15.291,
+          "median_products": 0.0,
+          "p95_microseconds": 29.162499999999994
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 1782.3887192825111,
+          "mean_products": 601.4125560538116,
+          "median_microseconds": 575.291,
+          "median_products": 196.0,
+          "p95_microseconds": 8900.470800000001
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 11319,
+        "median": 196.0,
+        "minimum": 65
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.6018121244258263,
+          "median_time_ratio_to_chebyshev": 0.5603685786845266,
+          "paired_strict_win_fraction": 0.3829596412556054
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.5991280858946996,
+          "median_time_ratio_to_chebyshev": 0.5534155757694801,
+          "paired_strict_win_fraction": 0.3829596412556054
+        }
+      },
+      "condition_number": {
+        "maximum": 37669606.82712168,
+        "median": 11284.565761599883,
+        "minimum": 1223.9244648384022
+      },
+      "degree_two_acceptance_fraction": 0.28699551569506726,
+      "horizon": 40,
+      "newton_systems": 223,
+      "original_residual_diagnostics": {
+        "certificate": {
+          "fraction_at_most_tolerance": 0.9865470852017937,
+          "maximum": 0.07360810699049546
+        },
+        "cg": {
+          "fraction_at_most_tolerance": 0.9820627802690582,
+          "maximum": 0.05766462191818789
+        },
+        "cost_gated_certificate": {
+          "fraction_at_most_tolerance": 0.9865470852017937,
+          "maximum": 0.07360810699049546
+        },
+        "direct": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 6.004564536371335e-14
+        },
+        "interval_chebyshev": {
+          "fraction_at_most_tolerance": 0.9865470852017937,
+          "maximum": 0.07360810699049546
+        }
+      },
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 29900.485074999997,
+          "mean_total_products": 9830.625,
+          "median_total_microseconds": 22320.8955,
+          "median_total_products": 7297.0
+        },
+        "cg": {
+          "mean_total_microseconds": 886.454925,
+          "mean_total_products": 200.5,
+          "median_total_microseconds": 928.375,
+          "median_total_products": 201.0
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 29767.131075000005,
+          "mean_total_products": 9830.625,
+          "median_total_microseconds": 22244.3335,
+          "median_total_products": 7297.0
+        },
+        "direct": {
+          "mean_total_microseconds": 482.939025,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 512.5815,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 49684.08555,
+          "mean_total_products": 16764.375,
+          "median_total_microseconds": 53723.458,
+          "median_total_products": 18116.5
+        }
+      },
+      "plant": "double_integrator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 5.195495616060009,
+        "median": 1.4943429736053448
+      }
+    },
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 1641.150462672811,
+          "mean_products": 510.1290322580645,
+          "median_microseconds": 827.291,
+          "median_products": 249.0,
+          "p95_microseconds": 1866.3413999999998
+        },
+        "cg": {
+          "mean_microseconds": 44.85623133640553,
+          "mean_products": 9.84331797235023,
+          "median_microseconds": 29.666,
+          "median_products": 5.0,
+          "p95_microseconds": 120.32499999999999
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 1638.8081815668202,
+          "mean_products": 510.1290322580645,
+          "median_microseconds": 838.542,
+          "median_products": 249.0,
+          "p95_microseconds": 1866.5415999999996
+        },
+        "direct": {
+          "mean_microseconds": 32.043422119815666,
+          "mean_products": 0.0,
+          "median_microseconds": 27.584,
+          "median_products": 0.0,
+          "p95_microseconds": 56.96679999999999
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 2523.603408294931,
+          "mean_products": 797.5760368663595,
+          "median_microseconds": 1105.292,
+          "median_products": 351.0,
+          "p95_microseconds": 11097.707799999984
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 12292,
+        "median": 351.0,
+        "minimum": 164
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.6503202750790593,
+          "median_time_ratio_to_chebyshev": 0.7484818491403178,
+          "paired_strict_win_fraction": 0.4147465437788018
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.6493921256327985,
+          "median_time_ratio_to_chebyshev": 0.7586610597018707,
+          "paired_strict_win_fraction": 0.42672811059907834
+        }
+      },
+      "condition_number": {
+        "maximum": 44426671.5470015,
+        "median": 36193.12861475237,
+        "minimum": 7892.6566922605425
+      },
+      "degree_two_acceptance_fraction": 0.2350230414746544,
+      "horizon": 60,
+      "newton_systems": 217,
+      "original_residual_diagnostics": {
+        "certificate": {
+          "fraction_at_most_tolerance": 0.9815668202764977,
+          "maximum": 0.06596955777427442
+        },
+        "cg": {
+          "fraction_at_most_tolerance": 0.9907834101382489,
+          "maximum": 0.052001681781389766
+        },
+        "cost_gated_certificate": {
+          "fraction_at_most_tolerance": 0.9815668202764977,
+          "maximum": 0.06596955777427442
+        },
+        "direct": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 4.389476125763568e-13
+        },
+        "interval_chebyshev": {
+          "fraction_at_most_tolerance": 0.9769585253456221,
+          "maximum": 0.06596955777427442
+        }
+      },
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 44516.206300000005,
+          "mean_total_products": 13837.25,
+          "median_total_microseconds": 36740.793000000005,
+          "median_total_products": 11341.0
+        },
+        "cg": {
+          "mean_total_microseconds": 1216.725275,
+          "mean_total_products": 267.0,
+          "median_total_microseconds": 1140.4164999999998,
+          "median_total_products": 240.5
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 44452.671924999995,
+          "mean_total_products": 13837.25,
+          "median_total_microseconds": 36833.2935,
+          "median_total_products": 11341.0
+        },
+        "direct": {
+          "mean_total_microseconds": 869.177825,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 945.373,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 68452.74244999999,
+          "mean_total_products": 21634.25,
+          "median_total_microseconds": 73461.542,
+          "median_total_products": 23095.0
+        }
+      },
+      "plant": "double_integrator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 3.800608666597492,
+        "median": 1.4496344934517889
+      }
+    },
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 80.28882672413792,
+          "mean_products": 17.18103448275862,
+          "median_microseconds": 38.458,
+          "median_products": 2.0,
+          "p95_microseconds": 213.54374999999996
+        },
+        "cg": {
+          "mean_microseconds": 12.670322413793103,
+          "mean_products": 2.3405172413793105,
+          "median_microseconds": 10.958,
+          "median_products": 2.0,
+          "p95_microseconds": 23.548199999999994
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 73.15836637931035,
+          "mean_products": 17.905172413793103,
+          "median_microseconds": 36.458,
+          "median_products": 2.0,
+          "p95_microseconds": 204.3913499999997
+        },
+        "direct": {
+          "mean_microseconds": 8.612085344827586,
+          "mean_products": 0.0,
+          "median_microseconds": 7.583,
+          "median_products": 0.0,
+          "p95_microseconds": 13.5
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 896.4425603448276,
+          "mean_products": 311.98275862068965,
+          "median_microseconds": 133.0625,
+          "median_products": 46.5,
+          "p95_microseconds": 4781.2315499999995
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 5767,
+        "median": 46.5,
+        "minimum": 7
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.08956382737255786,
+          "median_time_ratio_to_chebyshev": 0.289022076092062,
+          "paired_strict_win_fraction": 0.6206896551724138
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.08160965310612772,
+          "median_time_ratio_to_chebyshev": 0.2739915453264443,
+          "paired_strict_win_fraction": 0.7396551724137931
+        }
+      },
+      "condition_number": {
+        "maximum": 9776264.293657875,
+        "median": 620.2050736376156,
+        "minimum": 13.497996265949347
+      },
+      "degree_two_acceptance_fraction": 0.6336206896551724,
+      "horizon": 20,
+      "newton_systems": 232,
+      "original_residual_diagnostics": {
+        "certificate": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.04758759582375281
+        },
+        "cg": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.049096451488633966
+        },
+        "cost_gated_certificate": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.04758759582375281
+        },
+        "direct": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 6.256326679908286e-16
+        },
+        "interval_chebyshev": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.04971450595837964
+        }
+      },
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 2328.375975,
+          "mean_total_products": 498.25,
+          "median_total_microseconds": 1903.353,
+          "median_total_products": 382.0
+        },
+        "cg": {
+          "mean_total_microseconds": 367.43935,
+          "mean_total_products": 67.875,
+          "median_total_microseconds": 372.06600000000003,
+          "median_total_products": 65.5
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 2121.5926249999998,
+          "mean_total_products": 519.25,
+          "median_total_microseconds": 1738.6885,
+          "median_total_products": 404.0
+        },
+        "direct": {
+          "mean_total_microseconds": 249.750475,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 264.8355,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 25996.83425,
+          "mean_total_products": 9047.5,
+          "median_total_microseconds": 25495.290500000003,
+          "median_total_products": 8847.0
+        }
+      },
+      "plant": "damped_oscillator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 4.400387284945072,
+        "median": 1.410161672210741
+      }
+    },
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 115.64518672566372,
+          "mean_products": 28.420353982300885,
+          "median_microseconds": 44.0205,
+          "median_products": 2.0,
+          "p95_microseconds": 614.6061
+        },
+        "cg": {
+          "mean_microseconds": 15.721017699115045,
+          "mean_products": 2.9469026548672566,
+          "median_microseconds": 13.2705,
+          "median_products": 2.0,
+          "p95_microseconds": 32.25
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 110.76979115044247,
+          "mean_products": 28.86725663716814,
+          "median_microseconds": 41.459,
+          "median_products": 2.0,
+          "p95_microseconds": 640.48545
+        },
+        "direct": {
+          "mean_microseconds": 14.985823008849554,
+          "mean_products": 0.0,
+          "median_microseconds": 13.791,
+          "median_products": 0.0,
+          "p95_microseconds": 22.225149999999985
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 939.253438938053,
+          "mean_products": 312.98230088495575,
+          "median_microseconds": 157.042,
+          "median_products": 51.5,
+          "p95_microseconds": 5243.815099999995
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 6351,
+        "median": 51.5,
+        "minimum": 12
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.12312458164264535,
+          "median_time_ratio_to_chebyshev": 0.2803103628328727,
+          "paired_strict_win_fraction": 0.5725663716814159
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.11793386806832667,
+          "median_time_ratio_to_chebyshev": 0.263999439640351,
+          "paired_strict_win_fraction": 0.6592920353982301
+        }
+      },
+      "condition_number": {
+        "maximum": 11857513.644055294,
+        "median": 752.7595997316015,
+        "minimum": 38.66029974354231
+      },
+      "degree_two_acceptance_fraction": 0.5575221238938053,
+      "horizon": 40,
+      "newton_systems": 226,
+      "original_residual_diagnostics": {
+        "certificate": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.048532877942703674
+        },
+        "cg": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.04945914923334489
+        },
+        "cost_gated_certificate": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.048532877942703674
+        },
+        "direct": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 1.4550174496585504e-15
+        },
+        "interval_chebyshev": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.049806418789706305
+        }
+      },
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 3266.976525,
+          "mean_total_products": 802.875,
+          "median_total_microseconds": 3132.105,
+          "median_total_products": 749.0
+        },
+        "cg": {
+          "mean_total_microseconds": 444.11875,
+          "mean_total_products": 83.25,
+          "median_total_microseconds": 442.875,
+          "median_total_products": 76.0
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 3129.2466,
+          "mean_total_products": 815.5,
+          "median_total_microseconds": 3032.3715,
+          "median_total_products": 766.0
+        },
+        "direct": {
+          "mean_total_microseconds": 423.3495,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 452.4375,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 26533.909649999998,
+          "mean_total_products": 8841.75,
+          "median_total_microseconds": 20235.6855,
+          "median_total_products": 6751.5
+        }
+      },
+      "plant": "damped_oscillator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 2.141817515296612,
+        "median": 1.3028901160757307
+      }
+    },
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 129.97473805309735,
+          "mean_products": 30.207964601769913,
+          "median_microseconds": 53.9375,
+          "median_products": 2.0,
+          "p95_microseconds": 666.7251499999994
+        },
+        "cg": {
+          "mean_microseconds": 18.711534513274337,
+          "mean_products": 3.2212389380530975,
+          "median_microseconds": 15.375,
+          "median_products": 2.0,
+          "p95_microseconds": 38.98939999999999
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 125.99297964601769,
+          "mean_products": 30.45575221238938,
+          "median_microseconds": 51.271,
+          "median_products": 2.0,
+          "p95_microseconds": 681.6293499999989
+        },
+        "direct": {
+          "mean_microseconds": 25.92664513274336,
+          "mean_products": 0.0,
+          "median_microseconds": 23.583,
+          "median_products": 0.0,
+          "p95_microseconds": 40.98474999999999
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 1046.9481867256638,
+          "mean_products": 327.570796460177,
+          "median_microseconds": 178.875,
+          "median_products": 54.5,
+          "p95_microseconds": 5723.745649999999
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 6687,
+        "median": 54.5,
+        "minimum": 15
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.12414629463144118,
+          "median_time_ratio_to_chebyshev": 0.30153738644304684,
+          "paired_strict_win_fraction": 0.5743362831858407
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.12034308979517068,
+          "median_time_ratio_to_chebyshev": 0.2866303284416492,
+          "paired_strict_win_fraction": 0.6548672566371682
+        }
+      },
+      "condition_number": {
+        "maximum": 13147839.678204192,
+        "median": 863.3799778295736,
+        "minimum": 59.92888453311989
+      },
+      "degree_two_acceptance_fraction": 0.5486725663716814,
+      "horizon": 60,
+      "newton_systems": 226,
+      "original_residual_diagnostics": {
+        "certificate": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.049259203950073965
+        },
+        "cg": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.04945468816247777
+        },
+        "cost_gated_certificate": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.049259203950073965
+        },
+        "direct": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 1.7451190259474496e-15
+        },
+        "interval_chebyshev": {
+          "fraction_at_most_tolerance": 1.0,
+          "maximum": 0.04992353440237545
+        }
+      },
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 3671.78635,
+          "mean_total_products": 853.375,
+          "median_total_microseconds": 3487.665,
+          "median_total_products": 810.0
+        },
+        "cg": {
+          "mean_total_microseconds": 528.60085,
+          "mean_total_products": 91.0,
+          "median_total_microseconds": 527.9190000000001,
+          "median_total_products": 82.5
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 3559.3016749999997,
+          "mean_total_products": 860.375,
+          "median_total_microseconds": 3402.8755,
+          "median_total_products": 819.0
+        },
+        "direct": {
+          "mean_total_microseconds": 732.427725,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 766.163,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 29576.286275,
+          "mean_total_products": 9253.875,
+          "median_total_microseconds": 21996.936999999998,
+          "median_total_products": 6907.5
+        }
+      },
+      "plant": "damped_oscillator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 1.8350360846196394,
+        "median": 1.1740284000519097
+      }
+    }
+  ],
+  "end_to_end": {
+    "by_configuration": {
+      "damped_oscillator_N20": {
+        "certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.05382562453794692,
+          "maximum_relative_objective_gap_to_direct": 1.681067183698729e-07,
+          "qps": 8,
+          "total_matrix_products": 7189
+        },
+        "cg": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.057553384738775866,
+          "maximum_relative_objective_gap_to_direct": 1.2563994609639237e-07,
+          "qps": 8,
+          "total_matrix_products": 1359
+        },
+        "cost_gated_certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.053825331127920234,
+          "maximum_relative_objective_gap_to_direct": 1.681036644743834e-07,
+          "qps": 8,
+          "total_matrix_products": 7325
+        },
+        "direct": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.0,
+          "maximum_relative_objective_gap_to_direct": 0.0,
+          "qps": 8,
+          "total_matrix_products": 0
+        },
+        "interval_chebyshev": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.05382496083947305,
+          "maximum_relative_objective_gap_to_direct": 1.1615341903738218e-07,
+          "qps": 8,
+          "total_matrix_products": 63678
+        }
+      },
+      "damped_oscillator_N40": {
+        "certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.049786626894240175,
+          "maximum_relative_objective_gap_to_direct": 5.714645994357804e-08,
+          "qps": 8,
+          "total_matrix_products": 9891
+        },
+        "cg": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.05631261221377899,
+          "maximum_relative_objective_gap_to_direct": 3.701848908876928e-08,
+          "qps": 8,
+          "total_matrix_products": 1647
+        },
+        "cost_gated_certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.049786626894240175,
+          "maximum_relative_objective_gap_to_direct": 5.714645994357804e-08,
+          "qps": 8,
+          "total_matrix_products": 9984
+        },
+        "direct": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.0,
+          "maximum_relative_objective_gap_to_direct": 0.0,
+          "qps": 8,
+          "total_matrix_products": 0
+        },
+        "interval_chebyshev": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.04996819963144253,
+          "maximum_relative_objective_gap_to_direct": 4.33655084155655e-08,
+          "qps": 8,
+          "total_matrix_products": 88338
+        }
+      },
+      "damped_oscillator_N60": {
+        "certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.04975709655509758,
+          "maximum_relative_objective_gap_to_direct": 4.46744765946776e-08,
+          "qps": 8,
+          "total_matrix_products": 11909
+        },
+        "cg": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.06440850372490957,
+          "maximum_relative_objective_gap_to_direct": 4.5878420238452186e-08,
+          "qps": 8,
+          "total_matrix_products": 1847
+        },
+        "cost_gated_certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.04975709655509758,
+          "maximum_relative_objective_gap_to_direct": 4.46744765946776e-08,
+          "qps": 8,
+          "total_matrix_products": 11965
+        },
+        "direct": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.0,
+          "maximum_relative_objective_gap_to_direct": 0.0,
+          "qps": 8,
+          "total_matrix_products": 0
+        },
+        "interval_chebyshev": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.049780043277035606,
+          "maximum_relative_objective_gap_to_direct": 4.467447636513565e-08,
+          "qps": 8,
+          "total_matrix_products": 61763
+        }
+      },
+      "double_integrator_N20": {
+        "certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.06254187525365136,
+          "maximum_relative_objective_gap_to_direct": 3.6065534582861493e-08,
+          "qps": 8,
+          "total_matrix_products": 78179
+        },
+        "cg": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.10175609365445014,
+          "maximum_relative_objective_gap_to_direct": 3.937251579744978e-08,
+          "qps": 8,
+          "total_matrix_products": 2140
+        },
+        "cost_gated_certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.06254187525365136,
+          "maximum_relative_objective_gap_to_direct": 3.6065534929986435e-08,
+          "qps": 8,
+          "total_matrix_products": 78197
+        },
+        "direct": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.0,
+          "maximum_relative_objective_gap_to_direct": 0.0,
+          "qps": 8,
+          "total_matrix_products": 0
+        },
+        "interval_chebyshev": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.0628926424306828,
+          "maximum_relative_objective_gap_to_direct": 8.576148831943868e-08,
+          "qps": 8,
+          "total_matrix_products": 131490
+        }
+      },
+      "double_integrator_N40": {
+        "certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.1895005813791705,
+          "maximum_relative_objective_gap_to_direct": 3.307707988232576e-08,
+          "qps": 8,
+          "total_matrix_products": 142144
+        },
+        "cg": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.37992674906302554,
+          "maximum_relative_objective_gap_to_direct": 2.6555625299492142e-08,
+          "qps": 8,
+          "total_matrix_products": 3756
+        },
+        "cost_gated_certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.1895005813791705,
+          "maximum_relative_objective_gap_to_direct": 3.307707988232576e-08,
+          "qps": 8,
+          "total_matrix_products": 142144
+        },
+        "direct": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.0,
+          "maximum_relative_objective_gap_to_direct": 0.0,
+          "qps": 8,
+          "total_matrix_products": 0
+        },
+        "interval_chebyshev": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.07536476828555942,
+          "maximum_relative_objective_gap_to_direct": 3.3077078851619304e-08,
+          "qps": 8,
+          "total_matrix_products": 197369
+        }
+      },
+      "double_integrator_N60": {
+        "certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.1628082428521955,
+          "maximum_relative_objective_gap_to_direct": 8.752981012929074e-09,
+          "qps": 8,
+          "total_matrix_products": 219130
+        },
+        "cg": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.9006334199309004,
+          "maximum_relative_objective_gap_to_direct": 5.586611606566226e-09,
+          "qps": 8,
+          "total_matrix_products": 5533
+        },
+        "cost_gated_certificate": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.1628082428521955,
+          "maximum_relative_objective_gap_to_direct": 8.752981012929074e-09,
+          "qps": 8,
+          "total_matrix_products": 219130
+        },
+        "direct": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.0,
+          "maximum_relative_objective_gap_to_direct": 0.0,
+          "qps": 8,
+          "total_matrix_products": 0
+        },
+        "interval_chebyshev": {
+          "converged_qps": 8,
+          "maximum_feasibility_violation": 0.0,
+          "maximum_original_relative_residual": 0.0847757905029705,
+          "maximum_relative_objective_gap_to_direct": 1.167631656853565e-08,
+          "qps": 8,
+          "total_matrix_products": 220732
+        }
+      }
+    },
+    "by_method": {
+      "certificate": {
+        "converged_qps": 48,
+        "degree_two_acceptance_rate": 0.2780580075662043,
+        "maximum_feasibility_violation": 0.0,
+        "maximum_original_relative_residual": 0.1895005813791705,
+        "maximum_preconditioned_relative_residual": 0.04990035102995615,
+        "maximum_relative_objective_gap_to_direct": 1.681067183698729e-07,
+        "maximum_relative_solution_distance_to_direct": 7.583041836837255e-05,
+        "qps": 48,
+        "total_linear_systems": 1586,
+        "total_matrix_products": 468442,
+        "total_newton_updates": 1442
+      },
+      "cg": {
+        "converged_qps": 48,
+        "degree_two_acceptance_rate": 0.0,
+        "maximum_feasibility_violation": 0.0,
+        "maximum_original_relative_residual": 0.9006334199309004,
+        "maximum_preconditioned_relative_residual": 0.049991577528000666,
+        "maximum_relative_objective_gap_to_direct": 1.2563994609639237e-07,
+        "maximum_relative_solution_distance_to_direct": 0.0001580175416956041,
+        "qps": 48,
+        "total_linear_systems": 1645,
+        "total_matrix_products": 16282,
+        "total_newton_updates": 1501
+      },
+      "cost_gated_certificate": {
+        "converged_qps": 48,
+        "degree_two_acceptance_rate": 0.2663727959697733,
+        "maximum_feasibility_violation": 0.0,
+        "maximum_original_relative_residual": 0.1895005813791705,
+        "maximum_preconditioned_relative_residual": 0.04990035102995615,
+        "maximum_relative_objective_gap_to_direct": 1.681036644743834e-07,
+        "maximum_relative_solution_distance_to_direct": 7.583041836837255e-05,
+        "qps": 48,
+        "total_linear_systems": 1588,
+        "total_matrix_products": 468745,
+        "total_newton_updates": 1444
+      },
+      "direct": {
+        "converged_qps": 48,
+        "degree_two_acceptance_rate": 0.0,
+        "maximum_feasibility_violation": 0.0,
+        "maximum_original_relative_residual": 0.0,
+        "maximum_preconditioned_relative_residual": 0.0,
+        "maximum_relative_objective_gap_to_direct": 0.0,
+        "maximum_relative_solution_distance_to_direct": 0.0,
+        "qps": 48,
+        "total_linear_systems": 1498,
+        "total_matrix_products": 0,
+        "total_newton_updates": 1354
+      },
+      "interval_chebyshev": {
+        "converged_qps": 48,
+        "degree_two_acceptance_rate": 0.0,
+        "maximum_feasibility_violation": 0.0,
+        "maximum_original_relative_residual": 0.0847757905029705,
+        "maximum_preconditioned_relative_residual": 0.04996813002094176,
+        "maximum_relative_objective_gap_to_direct": 1.1615341903738218e-07,
+        "maximum_relative_solution_distance_to_direct": 7.600487001172138e-05,
+        "qps": 48,
+        "total_linear_systems": 1557,
+        "total_matrix_products": 763370,
+        "total_newton_updates": 1413
+      }
+    },
+    "certificate_product_ratio_to_interval_chebyshev": 0.6136499993450096
+  },
+  "protocol": {
+    "certificate_safeguard": "a degree-two candidate must also meet the original residual target; otherwise a full interval-Chebyshev solve is recomputed and the two discarded products are charged",
+    "configuration": {
+      "barrier_weights": [
+        0.1,
+        0.03,
+        0.01
+      ],
+      "gate_degree": 22,
+      "horizons": [
+        20,
+        40,
+        60
+      ],
+      "plants": [
+        "double_integrator",
+        "damped_oscillator"
+      ],
+      "seed": 20260912,
+      "state_angles": [
+        0.0,
+        0.39269908169872414,
+        0.7853981633974483,
+        1.1780972450961724,
+        1.5707963267948966,
+        1.9634954084936207,
+        2.356194490192345,
+        2.748893571891069
+      ],
+      "state_radius": 0.75,
+      "states": 8,
+      "timing_repeats": 5,
+      "tolerance": 0.05
+    },
+    "declared_stopping_criterion": "preconditioned residual <= 0.05",
+    "endpoint_rule": "precompute extrema of P H P; for each barrier diagonal d use Weyl bounds lambda_min(PHP)+min(P^2 d) and lambda_max(PHP)+max(P^2 d); exact current eigenvalues are validation only",
+    "environment": {
+      "numpy": "2.4.6",
+      "platform": "macOS-26.5.2-arm64-arm-64bit",
+      "python": "3.11.15",
+      "thread_limits": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      }
+    },
+    "original_residual_definition": "norm(A direction + g,2) / norm(g,2)",
+    "original_residual_scope": "diagnostic only; it is not claimed to inherit the 0.05 bound",
+    "preconditioned_residual_definition": "norm(P(A direction + g),2) / norm(P g,2)",
+    "preconditioner": "fixed symmetric Jacobi P=diag(H)^(-1/2), computed once per plant/horizon configuration",
+    "source_sha256": {
+      "experiments/run_constrained_mpc.py": "4d42acee97d131308597eefc245877d709b52d23cd83a9992279c5dc808ab2f2",
+      "experiments/run_constrained_mpc_jacobi_pilot.py": "cda536d0e469dab5cda5ffae9be85c19055b08f1a4627fe0279ed296821237e4",
+      "experiments/test_constrained_mpc_jacobi.py": "e74307e3491322234a068481c3cd2cbc45b59569b46ec195a017c3afc3e8a452",
+      "src/fmcert/__init__.py": "c90adde00e9c35a0f106848e7753cc9ee565d98e9345a7f8451e1e09551545fa",
+      "src/fmcert/algorithm.py": "cff58434fa359a76d987a86b35138e167513b421f564a79dd38d5bca330df14a",
+      "src/fmcert/baselines.py": "a311b5aedeb77b9a562f0b26471cfb5626c4ae0c1b8ec9a4d9545f8d835a28dd",
+      "src/fmcert/moments.py": "05bbb237810072db2ab59a25296d42ec0d75ed443d532b177c455fefff0fdfe2",
+      "src/fmcert/sdp.py": "78a255682cca3f1023b49b2d01b394eca82a514edd47e8d4bcf358ed4d3b37bc"
+    },
+    "status": "exploratory robustness check; not a superiority claim",
+    "timing": "single process; five randomized interleaved repeats; transformed matrices and complete polynomial plans prepared before timing; no artificial delay; explicit dense transformed products omit the common O(n) diagonal scaling cost",
+    "transformed_system": "(P A P) y = -P g; direction = P y"
+  }
+}

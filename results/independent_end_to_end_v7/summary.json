@@ -1,0 +1,139 @@
+{
+  "by_degree": {
+    "2": {
+      "cases": 108,
+      "fraction_strictly_below_chebyshev_bound": 1.0,
+      "median_certificate_to_actual_nonzero": 1.0000000000044416,
+      "median_certificate_to_chebyshev_bound": 0.06411227514415885
+    },
+    "3": {
+      "cases": 108,
+      "fraction_strictly_below_chebyshev_bound": 1.0,
+      "median_certificate_to_actual_nonzero": 1.9359077955984596,
+      "median_certificate_to_chebyshev_bound": 0.04215821016859955
+    },
+    "4": {
+      "cases": 108,
+      "fraction_strictly_below_chebyshev_bound": 1.0,
+      "median_certificate_to_actual_nonzero": 2.520220270404157,
+      "median_certificate_to_chebyshev_bound": 0.04757277893039233
+    },
+    "6": {
+      "cases": 108,
+      "fraction_strictly_below_chebyshev_bound": 1.0,
+      "median_certificate_to_actual_nonzero": 2.042668583007675,
+      "median_certificate_to_chebyshev_bound": 0.05525914503040017
+    },
+    "8": {
+      "cases": 108,
+      "fraction_strictly_below_chebyshev_bound": 1.0,
+      "median_certificate_to_actual_nonzero": 2.0148417565259313,
+      "median_certificate_to_chebyshev_bound": 0.058792883375925455
+    }
+  },
+  "by_tolerance": {
+    "1e-02": {
+      "cases": 108,
+      "median_hvp_saving_when_passed": 0.7777777777777778,
+      "pass_counts_by_family": {
+        "log_uniform": 4,
+        "single_outlier": 4,
+        "three_cluster": 4,
+        "three_point": 12,
+        "two_point": 12
+      },
+      "pass_rate": 0.3333333333333333,
+      "strict_hvp_wins_over_cg": 0,
+      "strict_hvp_wins_over_minres": 0
+    },
+    "1e-04": {
+      "cases": 108,
+      "median_hvp_saving_when_passed": 0.94,
+      "pass_counts_by_family": {
+        "three_point": 8,
+        "two_point": 12
+      },
+      "pass_rate": 0.18518518518518517,
+      "strict_hvp_wins_over_cg": 0,
+      "strict_hvp_wins_over_minres": 0
+    },
+    "1e-06": {
+      "cases": 108,
+      "median_hvp_saving_when_passed": 0.8913043478260869,
+      "pass_counts_by_family": {
+        "three_point": 4,
+        "two_point": 4
+      },
+      "pass_rate": 0.07407407407407407,
+      "strict_hvp_wins_over_cg": 0,
+      "strict_hvp_wins_over_minres": 0
+    }
+  },
+  "candidate_grid_design_seconds": {
+    "maximum": 20.297937750001438,
+    "median": 1.177825313003268
+  },
+  "certificate_violations": 0,
+  "configuration": {
+    "degrees": [
+      2,
+      3,
+      4,
+      6,
+      8
+    ],
+    "size": 384,
+    "tolerances": [
+      0.01,
+      0.0001,
+      1e-06
+    ]
+  },
+  "design_checks": 540,
+  "end_to_end_checks": 324,
+  "environment": {
+    "clarabel": "0.11.1",
+    "cvxpy": "1.9.2",
+    "installed_solvers": [
+      "CLARABEL",
+      "SCS",
+      "SCIPY",
+      "HIGHS",
+      "OSQP"
+    ],
+    "matplotlib": "3.11.0",
+    "numpy": "2.4.6",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.11.15",
+    "scikit_learn": "1.9.0",
+    "scs": "3.2.11"
+  },
+  "max_point_residual_relative_discrepancy": 3.86656880087629e-13,
+  "max_raw_certificate_excess": -3.802513859341161e-14,
+  "max_robust_raw_certificate_excess": -2.444841094683289e-07,
+  "max_robust_scaled_certificate_excess": -1122898.0060138165,
+  "max_scaled_certificate_excess": -0.1459617583254779,
+  "max_spectral_recurrence_squared_discrepancy": 1.7103289270958832e-17,
+  "max_target_raw_certificate_excess": -8.180221511115532e-14,
+  "max_target_scaled_certificate_excess": -0.24959601446442614,
+  "robust_certificate_to_design": {
+    "maximum": 1.0283292139845954,
+    "median": 1.0012437636750953
+  },
+  "robust_checks": 36,
+  "robust_violations": 0,
+  "seed": 20260919,
+  "source_sha256": {
+    "experiments/run_validation.py": "2b3bffae5875f2a5331916f21ffd6cfd10e0b3e32759d8ed9344097e826e542f",
+    "src/fmcert/__init__.py": "c90adde00e9c35a0f106848e7753cc9ee565d98e9345a7f8451e1e09551545fa",
+    "src/fmcert/algorithm.py": "cff58434fa359a76d987a86b35138e167513b421f564a79dd38d5bca330df14a",
+    "src/fmcert/baselines.py": "a311b5aedeb77b9a562f0b26471cfb5626c4ae0c1b8ec9a4d9545f8d835a28dd",
+    "src/fmcert/moments.py": "05bbb237810072db2ab59a25296d42ec0d75ed443d532b177c455fefff0fdfe2",
+    "src/fmcert/sdp.py": "78a255682cca3f1023b49b2d01b394eca82a514edd47e8d4bcf358ed4d3b37bc"
+  },
+  "status": "independent validation after source freeze",
+  "target_certificate_violations": 0,
+  "target_failures": 0,
+  "target_runs": 324,
+  "wall_seconds": 189.35530216700863
+}

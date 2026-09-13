@@ -1,0 +1,83 @@
+{
+  "best_depth_counts_including_ties": {
+    "1": 1,
+    "2": 2,
+    "3": 9,
+    "4": 8,
+    "5": 14,
+    "6": 10
+  },
+  "by_depth": {
+    "1": {
+      "cases": 28,
+      "median_fraction_of_chebyshev_horizon": 0.8181818181818182,
+      "median_horizon": 11.0,
+      "median_saved_products_when_improved": 0.20526315789473681,
+      "strict_improvements_over_chebyshev": 20
+    },
+    "2": {
+      "cases": 28,
+      "median_fraction_of_chebyshev_horizon": 0.75,
+      "median_horizon": 9.5,
+      "median_saved_products_when_improved": 0.26315789473684215,
+      "strict_improvements_over_chebyshev": 25
+    },
+    "3": {
+      "cases": 28,
+      "median_fraction_of_chebyshev_horizon": 0.6619318181818181,
+      "median_horizon": 8.5,
+      "median_saved_products_when_improved": 0.36363636363636365,
+      "strict_improvements_over_chebyshev": 27
+    },
+    "4": {
+      "cases": 28,
+      "median_fraction_of_chebyshev_horizon": 0.6076555023923444,
+      "median_horizon": 7.0,
+      "median_saved_products_when_improved": 0.3923444976076555,
+      "strict_improvements_over_chebyshev": 28
+    },
+    "5": {
+      "cases": 28,
+      "median_fraction_of_chebyshev_horizon": 0.5,
+      "median_horizon": 5.0,
+      "median_saved_products_when_improved": 0.5,
+      "strict_improvements_over_chebyshev": 28
+    },
+    "6": {
+      "cases": 28,
+      "median_fraction_of_chebyshev_horizon": 0.6,
+      "median_horizon": 6.0,
+      "median_saved_products_when_improved": 0.4,
+      "strict_improvements_over_chebyshev": 28
+    }
+  },
+  "cases": 28,
+  "certificate_violations": 0,
+  "environment": {
+    "clarabel": "0.11.1",
+    "cvxpy": "1.9.2",
+    "numpy": "2.4.6",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.11.15",
+    "scs": "3.2.11"
+  },
+  "maximum_sdp_to_operational_horizon_gap": 1,
+  "number_of_instances_with_tied_best_depth": 8,
+  "rows": 168,
+  "seed": 20260919,
+  "selection_rule": "all two-dimensional Poisson cases and all breast-cancer/wine ridge cases with prescribed condition number 30 or 100",
+  "size": 384,
+  "source_sha256": {
+    "experiments/run_moment_frontier.py": "8781a7f7df98611ad5714a985138e87ac15c42592488ad26698f1357ad04dd47",
+    "experiments/vectorized_sdp.py": "848c891075f0e48ce90e0f5c1716ffacf3f2a24047b353f98e9c87f0c07225f4",
+    "src/fmcert/__init__.py": "c90adde00e9c35a0f106848e7753cc9ee565d98e9345a7f8451e1e09551545fa",
+    "src/fmcert/algorithm.py": "cff58434fa359a76d987a86b35138e167513b421f564a79dd38d5bca330df14a",
+    "src/fmcert/baselines.py": "a311b5aedeb77b9a562f0b26471cfb5626c4ae0c1b8ec9a4d9545f8d835a28dd",
+    "src/fmcert/moments.py": "05bbb237810072db2ab59a25296d42ec0d75ed443d532b177c455fefff0fdfe2",
+    "src/fmcert/sdp.py": "78a255682cca3f1023b49b2d01b394eca82a514edd47e8d4bcf358ed4d3b37bc"
+  },
+  "status": "prespecified observation-depth diagnostic",
+  "tolerance": 0.05,
+  "total_design_seconds": 178.29124170728028,
+  "wall_seconds": 178.35403670900268
+}

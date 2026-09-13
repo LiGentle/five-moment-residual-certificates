@@ -1,0 +1,64 @@
+{
+  "certificate_safeguard": "a degree-two candidate must also meet the original residual target; otherwise a full interval-Chebyshev solve is recomputed and the two discarded products are charged",
+  "configuration": {
+    "barrier_weights": [
+      0.1,
+      0.03,
+      0.01
+    ],
+    "gate_degree": 22,
+    "horizons": [
+      20,
+      40,
+      60
+    ],
+    "plants": [
+      "double_integrator",
+      "damped_oscillator"
+    ],
+    "seed": 20260912,
+    "state_angles": [
+      0.0,
+      0.39269908169872414,
+      0.7853981633974483,
+      1.1780972450961724,
+      1.5707963267948966,
+      1.9634954084936207,
+      2.356194490192345,
+      2.748893571891069
+    ],
+    "state_radius": 0.75,
+    "states": 8,
+    "timing_repeats": 5,
+    "tolerance": 0.05
+  },
+  "declared_stopping_criterion": "preconditioned residual <= 0.05",
+  "endpoint_rule": "precompute extrema of P H P; for each barrier diagonal d use Weyl bounds lambda_min(PHP)+min(P^2 d) and lambda_max(PHP)+max(P^2 d); exact current eigenvalues are validation only",
+  "environment": {
+    "numpy": "2.4.6",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.11.15",
+    "thread_limits": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "original_residual_definition": "norm(A direction + g,2) / norm(g,2)",
+  "original_residual_scope": "diagnostic only; it is not claimed to inherit the 0.05 bound",
+  "preconditioned_residual_definition": "norm(P(A direction + g),2) / norm(P g,2)",
+  "preconditioner": "fixed symmetric Jacobi P=diag(H)^(-1/2), computed once per plant/horizon configuration",
+  "source_sha256": {
+    "experiments/run_constrained_mpc.py": "4d42acee97d131308597eefc245877d709b52d23cd83a9992279c5dc808ab2f2",
+    "experiments/run_constrained_mpc_jacobi_pilot.py": "cda536d0e469dab5cda5ffae9be85c19055b08f1a4627fe0279ed296821237e4",
+    "experiments/test_constrained_mpc_jacobi.py": "e74307e3491322234a068481c3cd2cbc45b59569b46ec195a017c3afc3e8a452",
+    "src/fmcert/__init__.py": "c90adde00e9c35a0f106848e7753cc9ee565d98e9345a7f8451e1e09551545fa",
+    "src/fmcert/algorithm.py": "cff58434fa359a76d987a86b35138e167513b421f564a79dd38d5bca330df14a",
+    "src/fmcert/baselines.py": "a311b5aedeb77b9a562f0b26471cfb5626c4ae0c1b8ec9a4d9545f8d835a28dd",
+    "src/fmcert/moments.py": "05bbb237810072db2ab59a25296d42ec0d75ed443d532b177c455fefff0fdfe2",
+    "src/fmcert/sdp.py": "78a255682cca3f1023b49b2d01b394eca82a514edd47e8d4bcf358ed4d3b37bc"
+  },
+  "status": "exploratory robustness check; not a superiority claim",
+  "timing": "single process; five randomized interleaved repeats; transformed matrices and complete polynomial plans prepared before timing; no artificial delay; explicit dense transformed products omit the common O(n) diagonal scaling cost",
+  "transformed_system": "(P A P) y = -P g; direction = P y"
+}

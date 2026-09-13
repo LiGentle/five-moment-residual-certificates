@@ -1,0 +1,15 @@
+Dual-license notice
+===================
+
+Copyright (c) 2026 Jintao Li
+
+The materials in this repository are distributed under two licenses:
+
+1. Python source code is licensed under the MIT License.  The complete terms
+   appear in LICENSE-CODE.
+2. Numerical data, numerical results, figures, and documentation are licensed
+   under the Creative Commons Attribution 4.0 International License.  The
+   attribution notice and license link appear in LICENSE-DATA.
+
+If a file combines code and generated numerical output, the code portions are
+covered by the MIT License and the generated output by CC BY 4.0.

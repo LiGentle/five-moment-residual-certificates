@@ -1,0 +1,203 @@
+{
+  "atomic_flags_after_patch": 0,
+  "by_degree": {
+    "2": {
+      "attempts": 60,
+      "certificate_violations": 0,
+      "failures": 4,
+      "maximum_seconds_success": 0.0009643749799579382,
+      "median_certificate_ratio_to_reference": 1.0,
+      "median_seconds_success": 9.158349712379277e-05,
+      "successes": 56
+    },
+    "3": {
+      "attempts": 60,
+      "certificate_violations": 0,
+      "failures": 0,
+      "maximum_seconds_success": 0.233330917020794,
+      "median_certificate_ratio_to_reference": 1.0,
+      "median_seconds_success": 0.10760972899151966,
+      "successes": 60
+    },
+    "4": {
+      "attempts": 60,
+      "certificate_violations": 0,
+      "failures": 0,
+      "maximum_seconds_success": 4.05385133397067,
+      "median_certificate_ratio_to_reference": 1.0,
+      "median_seconds_success": 0.18653664595331065,
+      "successes": 60
+    },
+    "6": {
+      "attempts": 60,
+      "certificate_violations": 0,
+      "failures": 0,
+      "maximum_seconds_success": 7.568853041972034,
+      "median_certificate_ratio_to_reference": 1.0,
+      "median_seconds_success": 0.45015881248400547,
+      "successes": 60
+    },
+    "8": {
+      "attempts": 60,
+      "certificate_violations": 0,
+      "failures": 0,
+      "maximum_seconds_success": 11.153799874999095,
+      "median_certificate_ratio_to_reference": 1.0,
+      "median_seconds_success": 1.0774968960031401,
+      "successes": 60
+    }
+  },
+  "by_tolerance": {
+    "1e-02": {
+      "activation_rate": 0.5666666666666667,
+      "active": 34,
+      "active_by_family": {
+        "log_uniform": 4,
+        "single_outlier": 4,
+        "three_cluster": 4,
+        "three_point": 10,
+        "two_point": 12
+      },
+      "cases": 60,
+      "certificate_violations": 0,
+      "median_hvp_saving_when_active": 0.6666666666666667,
+      "reference_acceptance_rate": 0.6,
+      "reference_active": 36,
+      "reference_active_by_family": {
+        "log_uniform": 4,
+        "single_outlier": 4,
+        "three_cluster": 4,
+        "three_point": 12,
+        "two_point": 12
+      },
+      "retained_reference_acceptance_fraction": 0.9444444444444444,
+      "retained_reference_acceptances": 34,
+      "same_acceptance_decision_as_reference": 58,
+      "target_failures": 0
+    },
+    "1e-04": {
+      "activation_rate": 0.13333333333333333,
+      "active": 8,
+      "active_by_family": {
+        "two_point": 8
+      },
+      "cases": 60,
+      "certificate_violations": 0,
+      "median_hvp_saving_when_active": 0.96,
+      "reference_acceptance_rate": 0.3333333333333333,
+      "reference_active": 20,
+      "reference_active_by_family": {
+        "three_point": 8,
+        "two_point": 12
+      },
+      "retained_reference_acceptance_fraction": 0.4,
+      "retained_reference_acceptances": 8,
+      "same_acceptance_decision_as_reference": 48,
+      "target_failures": 0
+    },
+    "1e-06": {
+      "activation_rate": 0.016666666666666666,
+      "active": 1,
+      "active_by_family": {
+        "two_point": 1
+      },
+      "cases": 60,
+      "certificate_violations": 0,
+      "median_hvp_saving_when_active": 0.9130434782608696,
+      "reference_acceptance_rate": 0.13333333333333333,
+      "reference_active": 8,
+      "reference_active_by_family": {
+        "three_point": 4,
+        "two_point": 4
+      },
+      "retained_reference_acceptance_fraction": 0.125,
+      "retained_reference_acceptances": 1,
+      "same_acceptance_decision_as_reference": 53,
+      "target_failures": 0
+    }
+  },
+  "cases": 60,
+  "certificate_violations_among_successes": 0,
+  "configuration": {
+    "degrees": [
+      2,
+      3,
+      4,
+      6,
+      8
+    ],
+    "families": [
+      "two_point",
+      "three_point",
+      "three_cluster",
+      "log_uniform",
+      "single_outlier"
+    ],
+    "size": 384,
+    "tolerances": [
+      0.01,
+      0.0001,
+      1e-06
+    ]
+  },
+  "core_source_matches_reference_hashes": true,
+  "design_attempts": 300,
+  "design_failures": 4,
+  "design_successes": 296,
+  "environment": {
+    "cvxpy": "1.9.2",
+    "installed_solvers": [
+      "CLARABEL",
+      "SCS",
+      "SCIPY",
+      "HIGHS",
+      "OSQP"
+    ],
+    "numpy": "2.4.6",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.11.15"
+  },
+  "failure_messages": {
+    "LinAlgError: Singular matrix": 4
+  },
+  "failures_by_family_degree": {
+    "two_point|2": 4
+  },
+  "intervention": "runtime-only monkeypatch: fmcert.sdp._recover_atomic_measure returns None",
+  "max_raw_certificate_excess_among_successes": -3.802513859341161e-14,
+  "reference_boundary_design_rows_in_scope": 108,
+  "reference_sha256": {
+    "design_results.csv": "f62b83317e0d273b81e8b25080c2268e05c62eb579c4b5950f2d1ed7e77f3aba",
+    "summary.json": "dd858f6fbcd262dd5d25703461ed39de78128ae0fab2c33f791283b7813939ac",
+    "target_results.csv": "39a0ebd8aa773e61d1b62ab073057b415270c50e15fb084b246b09676833729d"
+  },
+  "result_sha256": {
+    "design_results.csv": "eea6a8736e186fe5226a8cd7cf3b4044e59d6b085a572b27946e2e6453ecaa5b",
+    "target_results.csv": "9d2226228d4db88aea1fcef574ea6552dd6faa8902d0e2f6432b7ece3881c5c1"
+  },
+  "seed": 20260919,
+  "source_sha256": {
+    "experiments/run_atomic_ablation.py": "b9081bf05b9b15e008c50dfde2e41b5b5404ce6d497e71fba63d09ee3f354b5b",
+    "experiments/run_validation.py": "2b3bffae5875f2a5331916f21ffd6cfd10e0b3e32759d8ed9344097e826e542f",
+    "src/fmcert/__init__.py": "c90adde00e9c35a0f106848e7753cc9ee565d98e9345a7f8451e1e09551545fa",
+    "src/fmcert/algorithm.py": "cff58434fa359a76d987a86b35138e167513b421f564a79dd38d5bca330df14a",
+    "src/fmcert/baselines.py": "a311b5aedeb77b9a562f0b26471cfb5626c4ae0c1b8ec9a4d9545f8d835a28dd",
+    "src/fmcert/moments.py": "05bbb237810072db2ab59a25296d42ec0d75ed443d532b177c455fefff0fdfe2",
+    "src/fmcert/sdp.py": "78a255682cca3f1023b49b2d01b394eca82a514edd47e8d4bcf358ed4d3b37bc"
+  },
+  "status": "post-development diagnostic; not part of the independent reference validation",
+  "timing_seconds": {
+    "case_grid_maximum": 22.06556591700064,
+    "case_grid_median": 1.833077729010256,
+    "design_attempt_maximum": 11.153799874999095,
+    "design_attempt_median": 0.20322972952271812,
+    "two_and_three_point_families": {
+      "ablation_case_median": 2.262463500024751,
+      "ablation_to_reference_total_ratio": 850.3711731325244,
+      "ablation_total": 86.55357333098073,
+      "reference_case_median": 0.0029939369997009635,
+      "reference_total": 0.10178328718757257
+    },
+    "wall": 220.48436504101846
+  }
+}

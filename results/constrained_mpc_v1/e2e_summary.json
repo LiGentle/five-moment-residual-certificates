@@ -1,0 +1,307 @@
+{
+  "barrier_weights": [
+    0.1,
+    0.03,
+    0.01
+  ],
+  "by_configuration": {
+    "damped_oscillator_N20": {
+      "certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 1682.875,
+        "mean_newton_updates": 31.625,
+        "qps": 8
+      },
+      "cg": {
+        "converged_qps": 8,
+        "mean_matrix_products": 174.125,
+        "mean_newton_updates": 29.875,
+        "qps": 8
+      },
+      "cost_gated_certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 1739.5,
+        "mean_newton_updates": 31.625,
+        "qps": 8
+      },
+      "direct": {
+        "converged_qps": 8,
+        "mean_matrix_products": 0.0,
+        "mean_newton_updates": 29.0,
+        "qps": 8
+      },
+      "interval_chebyshev": {
+        "converged_qps": 8,
+        "mean_matrix_products": 11610.25,
+        "mean_newton_updates": 30.375,
+        "qps": 8
+      }
+    },
+    "damped_oscillator_N40": {
+      "certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 2219.25,
+        "mean_newton_updates": 29.375,
+        "qps": 8
+      },
+      "cg": {
+        "converged_qps": 8,
+        "mean_matrix_products": 196.75,
+        "mean_newton_updates": 29.0,
+        "qps": 8
+      },
+      "cost_gated_certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 2274.0,
+        "mean_newton_updates": 30.0,
+        "qps": 8
+      },
+      "direct": {
+        "converged_qps": 8,
+        "mean_matrix_products": 0.0,
+        "mean_newton_updates": 28.25,
+        "qps": 8
+      },
+      "interval_chebyshev": {
+        "converged_qps": 8,
+        "mean_matrix_products": 9981.125,
+        "mean_newton_updates": 29.875,
+        "qps": 8
+      }
+    },
+    "damped_oscillator_N60": {
+      "certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 1281.625,
+        "mean_newton_updates": 29.0,
+        "qps": 8
+      },
+      "cg": {
+        "converged_qps": 8,
+        "mean_matrix_products": 214.5,
+        "mean_newton_updates": 28.25,
+        "qps": 8
+      },
+      "cost_gated_certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 1333.125,
+        "mean_newton_updates": 29.875,
+        "qps": 8
+      },
+      "direct": {
+        "converged_qps": 8,
+        "mean_matrix_products": 0.0,
+        "mean_newton_updates": 28.25,
+        "qps": 8
+      },
+      "interval_chebyshev": {
+        "converged_qps": 8,
+        "mean_matrix_products": 10685.0,
+        "mean_newton_updates": 29.25,
+        "qps": 8
+      }
+    },
+    "double_integrator_N20": {
+      "certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 22354.625,
+        "mean_newton_updates": 30.875,
+        "qps": 8
+      },
+      "cg": {
+        "converged_qps": 8,
+        "mean_matrix_products": 288.625,
+        "mean_newton_updates": 35.0,
+        "qps": 8
+      },
+      "cost_gated_certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 22511.25,
+        "mean_newton_updates": 31.0,
+        "qps": 8
+      },
+      "direct": {
+        "converged_qps": 8,
+        "mean_matrix_products": 0.0,
+        "mean_newton_updates": 28.75,
+        "qps": 8
+      },
+      "interval_chebyshev": {
+        "converged_qps": 8,
+        "mean_matrix_products": 42879.75,
+        "mean_newton_updates": 30.375,
+        "qps": 8
+      }
+    },
+    "double_integrator_N40": {
+      "certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 13253.625,
+        "mean_newton_updates": 27.125,
+        "qps": 8
+      },
+      "cg": {
+        "converged_qps": 8,
+        "mean_matrix_products": 325.625,
+        "mean_newton_updates": 34.75,
+        "qps": 8
+      },
+      "cost_gated_certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 13253.625,
+        "mean_newton_updates": 27.125,
+        "qps": 8
+      },
+      "direct": {
+        "converged_qps": 8,
+        "mean_matrix_products": 0.0,
+        "mean_newton_updates": 27.875,
+        "qps": 8
+      },
+      "interval_chebyshev": {
+        "converged_qps": 8,
+        "mean_matrix_products": 31218.375,
+        "mean_newton_updates": 28.625,
+        "qps": 8
+      }
+    },
+    "double_integrator_N60": {
+      "certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 22979.125,
+        "mean_newton_updates": 28.125,
+        "qps": 8
+      },
+      "cg": {
+        "converged_qps": 8,
+        "mean_matrix_products": 365.375,
+        "mean_newton_updates": 35.375,
+        "qps": 8
+      },
+      "cost_gated_certificate": {
+        "converged_qps": 8,
+        "mean_matrix_products": 22979.125,
+        "mean_newton_updates": 28.125,
+        "qps": 8
+      },
+      "direct": {
+        "converged_qps": 8,
+        "mean_matrix_products": 0.0,
+        "mean_newton_updates": 27.125,
+        "qps": 8
+      },
+      "interval_chebyshev": {
+        "converged_qps": 8,
+        "mean_matrix_products": 43652.875,
+        "mean_newton_updates": 29.75,
+        "qps": 8
+      }
+    }
+  },
+  "by_method": {
+    "certificate": {
+      "converged_qps": 48,
+      "convergence_rate": 1.0,
+      "degree_two_acceptance_rate": 0.3193818415969092,
+      "fraction_qps_with_control_fraction_above_0_90": 1.0,
+      "fraction_qps_with_control_fraction_above_0_95": 0.75,
+      "maximum_feasibility_violation": 0.0,
+      "maximum_final_scaled_gradient": 1.4312830985661666e-05,
+      "maximum_linear_relative_residual": 0.04986263802491442,
+      "maximum_relative_objective_gap_to_direct": 9.010945470711259e-08,
+      "maximum_relative_solution_distance_to_direct": 2.215740663656484e-05,
+      "median_relative_objective_gap_to_direct": 8.551792513561771e-09,
+      "qps": 48,
+      "total_line_search_backtracks": 16,
+      "total_linear_systems": 1553,
+      "total_matrix_products": 510169,
+      "total_newton_updates": 1409
+    },
+    "cg": {
+      "converged_qps": 48,
+      "convergence_rate": 1.0,
+      "degree_two_acceptance_rate": 0.0,
+      "fraction_qps_with_control_fraction_above_0_90": 1.0,
+      "fraction_qps_with_control_fraction_above_0_95": 0.75,
+      "maximum_feasibility_violation": 0.0,
+      "maximum_final_scaled_gradient": 1.3579478262893935e-06,
+      "maximum_linear_relative_residual": 0.04997276645151256,
+      "maximum_relative_objective_gap_to_direct": 8.409587195305329e-08,
+      "maximum_relative_solution_distance_to_direct": 0.00018917098500896318,
+      "median_relative_objective_gap_to_direct": 6.245129368066185e-09,
+      "qps": 48,
+      "total_line_search_backtracks": 48,
+      "total_linear_systems": 1682,
+      "total_matrix_products": 12520,
+      "total_newton_updates": 1538
+    },
+    "cost_gated_certificate": {
+      "converged_qps": 48,
+      "convergence_rate": 1.0,
+      "degree_two_acceptance_rate": 0.29693486590038315,
+      "fraction_qps_with_control_fraction_above_0_90": 1.0,
+      "fraction_qps_with_control_fraction_above_0_95": 0.75,
+      "maximum_feasibility_violation": 0.0,
+      "maximum_final_scaled_gradient": 1.4312830985661666e-05,
+      "maximum_linear_relative_residual": 0.04998642989565379,
+      "maximum_relative_objective_gap_to_direct": 9.010945390371576e-08,
+      "maximum_relative_solution_distance_to_direct": 2.215740663656484e-05,
+      "median_relative_objective_gap_to_direct": 8.551792513561771e-09,
+      "qps": 48,
+      "total_line_search_backtracks": 15,
+      "total_linear_systems": 1566,
+      "total_matrix_products": 512725,
+      "total_newton_updates": 1422
+    },
+    "direct": {
+      "converged_qps": 48,
+      "convergence_rate": 1.0,
+      "degree_two_acceptance_rate": 0.0,
+      "fraction_qps_with_control_fraction_above_0_90": 1.0,
+      "fraction_qps_with_control_fraction_above_0_95": 0.75,
+      "maximum_feasibility_violation": 0.0,
+      "maximum_final_scaled_gradient": 1.5663275280421224e-06,
+      "maximum_linear_relative_residual": 0.0,
+      "maximum_relative_objective_gap_to_direct": 0.0,
+      "maximum_relative_solution_distance_to_direct": 0.0,
+      "median_relative_objective_gap_to_direct": 0.0,
+      "qps": 48,
+      "total_line_search_backtracks": 23,
+      "total_linear_systems": 1498,
+      "total_matrix_products": 0,
+      "total_newton_updates": 1354
+    },
+    "interval_chebyshev": {
+      "converged_qps": 48,
+      "convergence_rate": 1.0,
+      "degree_two_acceptance_rate": 0.0,
+      "fraction_qps_with_control_fraction_above_0_90": 1.0,
+      "fraction_qps_with_control_fraction_above_0_95": 0.75,
+      "maximum_feasibility_violation": 0.0,
+      "maximum_final_scaled_gradient": 3.1513505943083966e-05,
+      "maximum_linear_relative_residual": 0.049929547386155744,
+      "maximum_relative_objective_gap_to_direct": 1.5215390036819657e-07,
+      "maximum_relative_solution_distance_to_direct": 2.154903410141964e-05,
+      "median_relative_objective_gap_to_direct": 8.575679663937537e-09,
+      "qps": 48,
+      "total_line_search_backtracks": 15,
+      "total_linear_systems": 1570,
+      "total_matrix_products": 1200219,
+      "total_newton_updates": 1426
+    }
+  },
+  "comparisons_to_interval_chebyshev": {
+    "certificate": {
+      "matrix_product_ratio_to_interval_chebyshev": 0.4250632592885132
+    },
+    "cg": {
+      "matrix_product_ratio_to_interval_chebyshev": 0.010431429597431803
+    },
+    "cost_gated_certificate": {
+      "matrix_product_ratio_to_interval_chebyshev": 0.42719287063444256
+    }
+  },
+  "linear_relative_residual_tolerance": 0.05,
+  "protocol": "each method follows its own three-stage barrier-Newton path; Weyl endpoints use fixed-H extrema and the current barrier diagonal; no exact current-system eigenvalue is used",
+  "qps_per_method": 48
+}

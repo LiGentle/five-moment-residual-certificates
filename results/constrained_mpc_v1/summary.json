@@ -1,0 +1,693 @@
+{
+  "configuration": {
+    "barrier_weights": [
+      0.1,
+      0.03,
+      0.01
+    ],
+    "gate_degree": 22,
+    "horizons": [
+      20,
+      40,
+      60
+    ],
+    "linear_residual_tolerance": 0.05,
+    "plants": [
+      "double_integrator",
+      "damped_oscillator"
+    ],
+    "seed": 20260912,
+    "state_angles_radians": [
+      0.0,
+      0.39269908169872414,
+      0.7853981633974483,
+      1.1780972450961724,
+      1.5707963267948966,
+      1.9634954084936207,
+      2.356194490192345,
+      2.748893571891069
+    ],
+    "state_scales": [
+      0.75,
+      0.7499999999999999,
+      0.75,
+      0.7499999999999999,
+      0.75,
+      0.7499999999999999,
+      0.75,
+      0.75
+    ],
+    "states": 8,
+    "timing_repeats": 5
+  },
+  "configurations": [
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 1280.1081930434782,
+          "mean_products": 432.0652173913044,
+          "median_microseconds": 107.854,
+          "median_products": 27.0,
+          "p95_microseconds": 1664.1937499999997
+        },
+        "cg": {
+          "mean_microseconds": 22.161488695652174,
+          "mean_products": 4.395652173913043,
+          "median_microseconds": 17.375,
+          "median_products": 3.0,
+          "p95_microseconds": 46.443749999999994
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 1283.8396895652174,
+          "mean_products": 432.7,
+          "median_microseconds": 108.4375,
+          "median_products": 27.0,
+          "p95_microseconds": 1684.7938999999997
+        },
+        "direct": {
+          "mean_microseconds": 11.109902608695652,
+          "mean_products": 0.0,
+          "median_microseconds": 8.166,
+          "median_products": 0.0,
+          "p95_microseconds": 25.800299999999993
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 2275.0967295652176,
+          "mean_products": 783.6565217391304,
+          "median_microseconds": 489.20849999999996,
+          "median_products": 169.5,
+          "p95_microseconds": 11657.029199999994
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 15537,
+        "median": 169.5,
+        "minimum": 16
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.5626609965230416,
+          "median_time_ratio_to_chebyshev": 0.2204663246856913,
+          "paired_strict_win_fraction": 0.5139130434782608
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.564301145037717,
+          "median_time_ratio_to_chebyshev": 0.22165906765724636,
+          "paired_strict_win_fraction": 0.5113043478260869
+        }
+      },
+      "condition_number": {
+        "maximum": 70976042.20204471,
+        "median": 8393.147965785487,
+        "minimum": 72.21855003545957
+      },
+      "degree_two_acceptance_fraction": 0.4391304347826087,
+      "horizon": 20,
+      "newton_systems": 230,
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 36803.11055,
+          "mean_total_products": 12421.875,
+          "median_total_microseconds": 26889.2735,
+          "median_total_products": 9067.0
+        },
+        "cg": {
+          "mean_total_microseconds": 637.1428,
+          "mean_total_products": 126.375,
+          "median_total_microseconds": 666.563,
+          "median_total_products": 128.0
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 36910.39107500001,
+          "mean_total_products": 12440.125,
+          "median_total_microseconds": 27183.063000000002,
+          "median_total_products": 9081.0
+        },
+        "direct": {
+          "mean_total_microseconds": 319.4097,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 335.0635,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 65409.030975,
+          "mean_total_products": 22530.125,
+          "median_total_microseconds": 67577.601,
+          "median_total_products": 23260.0
+        }
+      },
+      "plant": "double_integrator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 1.4066876149643155,
+        "median": 1.0777311179201672
+      }
+    },
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 1383.2314161434979,
+          "mean_products": 441.99551569506724,
+          "median_microseconds": 277.875,
+          "median_products": 85.0,
+          "p95_microseconds": 1795.4622999999997
+        },
+        "cg": {
+          "mean_microseconds": 25.60908789237668,
+          "mean_products": 4.869955156950673,
+          "median_microseconds": 21.25,
+          "median_products": 4.0,
+          "p95_microseconds": 52.053599999999996
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 1356.2944995515695,
+          "mean_products": 441.99551569506724,
+          "median_microseconds": 281.042,
+          "median_products": 85.0,
+          "p95_microseconds": 1779.5376999999999
+        },
+        "direct": {
+          "mean_microseconds": 19.25740179372197,
+          "mean_products": 0.0,
+          "median_microseconds": 15.375,
+          "median_products": 0.0,
+          "p95_microseconds": 40.95869999999994
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 2607.6496869955154,
+          "mean_products": 863.219730941704,
+          "median_microseconds": 633.375,
+          "median_products": 212.0,
+          "p95_microseconds": 12424.678699999997
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 15719,
+        "median": 212.0,
+        "minimum": 59
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.5304513957690502,
+          "median_time_ratio_to_chebyshev": 0.43872113676731794,
+          "paired_strict_win_fraction": 0.4834080717488789
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.5201214359104602,
+          "median_time_ratio_to_chebyshev": 0.44372133412275505,
+          "paired_strict_win_fraction": 0.47623318385650226
+        }
+      },
+      "condition_number": {
+        "maximum": 72652147.66072646,
+        "median": 13158.46154413007,
+        "minimum": 1006.3533926332052
+      },
+      "degree_two_acceptance_fraction": 0.35874439461883406,
+      "horizon": 40,
+      "newton_systems": 223,
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 38557.575725,
+          "mean_total_products": 12320.625,
+          "median_total_microseconds": 14472.396499999999,
+          "median_total_products": 4496.0
+        },
+        "cg": {
+          "mean_total_microseconds": 713.853325,
+          "mean_total_products": 135.75,
+          "median_total_microseconds": 735.7075,
+          "median_total_products": 137.5
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 37806.709175,
+          "mean_total_products": 12320.625,
+          "median_total_microseconds": 14445.0655,
+          "median_total_products": 4496.0
+        },
+        "direct": {
+          "mean_total_microseconds": 536.800075,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 557.685,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 72688.23502499999,
+          "mean_total_products": 24062.25,
+          "median_total_microseconds": 74945.979,
+          "median_total_products": 24944.5
+        }
+      },
+      "plant": "double_integrator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 1.5136450195801543,
+        "median": 1.0522212322569506
+      }
+    },
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 1437.8298119815668,
+          "mean_products": 443.57142857142856,
+          "median_microseconds": 497.167,
+          "median_products": 144.0,
+          "p95_microseconds": 1948.125
+        },
+        "cg": {
+          "mean_microseconds": 28.281258986175118,
+          "mean_products": 5.276497695852535,
+          "median_microseconds": 22.917,
+          "median_products": 4.0,
+          "p95_microseconds": 59.0
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 1450.3928875576037,
+          "mean_products": 443.57142857142856,
+          "median_microseconds": 494.125,
+          "median_products": 144.0,
+          "p95_microseconds": 1953.108
+        },
+        "direct": {
+          "mean_microseconds": 28.69361474654378,
+          "mean_products": 0.0,
+          "median_microseconds": 24.792,
+          "median_products": 0.0,
+          "p95_microseconds": 48.7754
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 3001.0322672811058,
+          "mean_products": 944.8202764976959,
+          "median_microseconds": 955.417,
+          "median_products": 297.0,
+          "p95_microseconds": 16663.316399999785
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 15722,
+        "median": 297.0,
+        "minimum": 130
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.4791117468670941,
+          "median_time_ratio_to_chebyshev": 0.5203664996540777,
+          "paired_strict_win_fraction": 0.49953917050691243
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.4832979982823176,
+          "median_time_ratio_to_chebyshev": 0.5171825496092282,
+          "paired_strict_win_fraction": 0.48663594470046084
+        }
+      },
+      "condition_number": {
+        "maximum": 72676367.79161635,
+        "median": 25909.902281494415,
+        "minimum": 4932.416389527973
+      },
+      "degree_two_acceptance_fraction": 0.35944700460829493,
+      "horizon": 60,
+      "newton_systems": 217,
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 39001.133649999996,
+          "mean_total_products": 12031.875,
+          "median_total_microseconds": 18116.334000000003,
+          "median_total_products": 5387.0
+        },
+        "cg": {
+          "mean_total_microseconds": 767.12915,
+          "mean_total_products": 143.125,
+          "median_total_microseconds": 807.1030000000001,
+          "median_total_products": 145.5
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 39341.907075,
+          "mean_total_products": 12031.875,
+          "median_total_microseconds": 18071.9385,
+          "median_total_products": 5387.0
+        },
+        "direct": {
+          "mean_total_microseconds": 778.3143,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 851.711,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 81403.00025000001,
+          "mean_total_products": 25628.25,
+          "median_total_microseconds": 84311.1045,
+          "median_total_products": 26749.0
+        }
+      },
+      "plant": "double_integrator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 1.6171969427143331,
+        "median": 1.0918841200282046
+      }
+    },
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 81.10955086206896,
+          "mean_products": 16.646551724137932,
+          "median_microseconds": 36.833,
+          "median_products": 2.0,
+          "p95_microseconds": 210.83154999999996
+        },
+        "cg": {
+          "mean_microseconds": 13.415015517241379,
+          "mean_products": 2.2155172413793105,
+          "median_microseconds": 11.541,
+          "median_products": 2.0,
+          "p95_microseconds": 25.4181
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 74.5114103448276,
+          "mean_products": 17.70689655172414,
+          "median_microseconds": 35.7495,
+          "median_products": 2.0,
+          "p95_microseconds": 202.71249999999992
+        },
+        "direct": {
+          "mean_microseconds": 9.49200948275862,
+          "mean_products": 0.0,
+          "median_microseconds": 7.667,
+          "median_products": 0.0,
+          "p95_microseconds": 17.833
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 1116.4054060344827,
+          "mean_products": 379.80172413793105,
+          "median_microseconds": 175.167,
+          "median_products": 59.5,
+          "p95_microseconds": 5938.177699999992
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 6892,
+        "median": 59.5,
+        "minimum": 7
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.07265241678663432,
+          "median_time_ratio_to_chebyshev": 0.21027362459824053,
+          "paired_strict_win_fraction": 0.6439655172413793
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.06674225146355672,
+          "median_time_ratio_to_chebyshev": 0.20408809878573017,
+          "paired_strict_win_fraction": 0.7327586206896551
+        }
+      },
+      "condition_number": {
+        "maximum": 13963776.608378144,
+        "median": 1021.158303171859,
+        "minimum": 13.532791668568393
+      },
+      "degree_two_acceptance_fraction": 0.6681034482758621,
+      "horizon": 20,
+      "newton_systems": 232,
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 2352.176975,
+          "mean_total_products": 482.75,
+          "median_total_microseconds": 1868.623,
+          "median_total_products": 316.5
+        },
+        "cg": {
+          "mean_total_microseconds": 389.03544999999997,
+          "mean_total_products": 64.25,
+          "median_total_microseconds": 406.209,
+          "median_total_products": 62.5
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 2160.8309,
+          "mean_total_products": 513.5,
+          "median_total_microseconds": 1776.228,
+          "median_total_products": 341.5
+        },
+        "direct": {
+          "mean_total_microseconds": 275.268275,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 293.501,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 32375.756775000005,
+          "mean_total_products": 11014.25,
+          "median_total_microseconds": 28930.728499999997,
+          "median_total_products": 9888.0
+        }
+      },
+      "plant": "damped_oscillator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 1.4504529717414731,
+        "median": 1.0410820224018713
+      }
+    },
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 113.64545840707963,
+          "mean_products": 28.942477876106196,
+          "median_microseconds": 38.3125,
+          "median_products": 2.0,
+          "p95_microseconds": 658.9499999999994
+        },
+        "cg": {
+          "mean_microseconds": 14.811042477876105,
+          "mean_products": 2.730088495575221,
+          "median_microseconds": 12.9795,
+          "median_products": 2.0,
+          "p95_microseconds": 29.356099999999998
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 108.71185221238937,
+          "mean_products": 29.486725663716815,
+          "median_microseconds": 37.0,
+          "median_products": 2.0,
+          "p95_microseconds": 661.5355999999999
+        },
+        "direct": {
+          "mean_microseconds": 14.229069026548672,
+          "mean_products": 0.0,
+          "median_microseconds": 13.416,
+          "median_products": 0.0,
+          "p95_microseconds": 18.36494999999999
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 1004.3452053097344,
+          "mean_products": 336.8141592920354,
+          "median_microseconds": 164.8955,
+          "median_products": 55.0,
+          "p95_microseconds": 5372.7627999999995
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 6926,
+        "median": 55.0,
+        "minimum": 10
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.11315378199274821,
+          "median_time_ratio_to_chebyshev": 0.2323441209735863,
+          "paired_strict_win_fraction": 0.5814159292035398
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.10824152058242091,
+          "median_time_ratio_to_chebyshev": 0.22438453444757436,
+          "paired_strict_win_fraction": 0.6761061946902654
+        }
+      },
+      "condition_number": {
+        "maximum": 14103724.816446515,
+        "median": 868.5254566695198,
+        "minimum": 26.628164194022155
+      },
+      "degree_two_acceptance_fraction": 0.5752212389380531,
+      "horizon": 40,
+      "newton_systems": 226,
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 3210.4842,
+          "mean_total_products": 817.625,
+          "median_total_microseconds": 3020.105,
+          "median_total_products": 757.0
+        },
+        "cg": {
+          "mean_total_microseconds": 418.41195000000005,
+          "mean_total_products": 77.125,
+          "median_total_microseconds": 420.6445,
+          "median_total_products": 73.0
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 3071.109825,
+          "mean_total_products": 833.0,
+          "median_total_microseconds": 2890.647,
+          "median_total_products": 783.5
+        },
+        "direct": {
+          "mean_total_microseconds": 401.97120000000007,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 432.6065,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 28372.75205,
+          "mean_total_products": 9515.0,
+          "median_total_microseconds": 21081.269,
+          "median_total_products": 7083.5
+        }
+      },
+      "plant": "damped_oscillator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 1.5497934194549463,
+        "median": 1.0468013325631338
+      }
+    },
+    {
+      "all_residuals_valid": true,
+      "by_method": {
+        "certificate": {
+          "mean_microseconds": 125.75560265486726,
+          "mean_products": 30.02654867256637,
+          "median_microseconds": 42.625,
+          "median_products": 2.0,
+          "p95_microseconds": 692.7223999999998
+        },
+        "cg": {
+          "mean_microseconds": 17.158143362831858,
+          "mean_products": 2.982300884955752,
+          "median_microseconds": 14.75,
+          "median_products": 2.0,
+          "p95_microseconds": 35.28139999999999
+        },
+        "cost_gated_certificate": {
+          "mean_microseconds": 119.97071592920355,
+          "mean_products": 30.216814159292035,
+          "median_microseconds": 40.896,
+          "median_products": 2.0,
+          "p95_microseconds": 695.4145499999996
+        },
+        "direct": {
+          "mean_microseconds": 24.115134513274334,
+          "mean_products": 0.0,
+          "median_microseconds": 22.208,
+          "median_products": 0.0,
+          "p95_microseconds": 35.193749999999994
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 1075.2697876106195,
+          "mean_products": 338.20353982300884,
+          "median_microseconds": 179.541,
+          "median_products": 56.0,
+          "p95_microseconds": 5895.585049999993
+        }
+      },
+      "chebyshev_degree": {
+        "maximum": 6926,
+        "median": 56.0,
+        "minimum": 12
+      },
+      "comparisons_to_interval_chebyshev": {
+        "certificate": {
+          "mean_time_ratio_to_chebyshev": 0.11695260492188805,
+          "median_time_ratio_to_chebyshev": 0.23741095348694727,
+          "paired_strict_win_fraction": 0.5787610619469027
+        },
+        "cost_gated_certificate": {
+          "mean_time_ratio_to_chebyshev": 0.11157266512229745,
+          "median_time_ratio_to_chebyshev": 0.22778084114491956,
+          "paired_strict_win_fraction": 0.6672566371681415
+        }
+      },
+      "condition_number": {
+        "maximum": 14104373.700753968,
+        "median": 905.6468554138183,
+        "minimum": 41.38615240160304
+      },
+      "degree_two_acceptance_fraction": 0.5619469026548672,
+      "horizon": 60,
+      "newton_systems": 226,
+      "per_qp_totals": {
+        "certificate": {
+          "mean_total_microseconds": 3552.5957750000002,
+          "mean_total_products": 848.25,
+          "median_total_microseconds": 3331.317,
+          "median_total_products": 790.5
+        },
+        "cg": {
+          "mean_total_microseconds": 484.71754999999996,
+          "mean_total_products": 84.25,
+          "median_total_microseconds": 485.645,
+          "median_total_products": 76.5
+        },
+        "cost_gated_certificate": {
+          "mean_total_microseconds": 3389.1727249999994,
+          "mean_total_products": 853.625,
+          "median_total_microseconds": 3176.8945,
+          "median_total_products": 804.5
+        },
+        "direct": {
+          "mean_total_microseconds": 681.2525499999999,
+          "mean_total_products": 0.0,
+          "median_total_microseconds": 718.5625,
+          "median_total_products": 0.0
+        },
+        "interval_chebyshev": {
+          "mean_total_microseconds": 30376.371499999997,
+          "mean_total_products": 9554.25,
+          "median_total_microseconds": 22740.958,
+          "median_total_products": 7123.0
+        }
+      },
+      "plant": "damped_oscillator",
+      "quadratic_programs": 8,
+      "reference_convergence_rate": 1.0,
+      "weyl_to_exact_condition_ratio": {
+        "maximum": 1.5967288068377816,
+        "median": 1.0679984589622395
+      }
+    }
+  ],
+  "cost_gate_provenance": "degree 22 is a secondary sensitivity fixed from the first independent dense-SPD timing pilot; its hardware-sensitive value does not define the ungated primary result",
+  "endpoint_protocol": "lambda_min/max of the fixed condensed Hessian are computed once; each Newton system uses the Weyl enclosure lambda_min(H)+min(d) and lambda_max(H)+max(d); exact endpoints are validation only",
+  "environment": {
+    "numpy": "2.4.6",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.11.15",
+    "thread_limits": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "experiment_scope": "reference box-barrier Newton-system replay; not an end-to-end comparison of constrained MPC controllers",
+  "source_sha256": {
+    "experiments/run_constrained_mpc.py": "4d42acee97d131308597eefc245877d709b52d23cd83a9992279c5dc808ab2f2",
+    "experiments/test_constrained_mpc.py": "0f2e8d91c5321f4bc22aa0e3833a3746a2ff5cdf57561ead9d962832a11f7805",
+    "src/fmcert/__init__.py": "c90adde00e9c35a0f106848e7753cc9ee565d98e9345a7f8451e1e09551545fa",
+    "src/fmcert/algorithm.py": "cff58434fa359a76d987a86b35138e167513b421f564a79dd38d5bca330df14a",
+    "src/fmcert/baselines.py": "a311b5aedeb77b9a562f0b26471cfb5626c4ae0c1b8ec9a4d9545f8d835a28dd",
+    "src/fmcert/moments.py": "05bbb237810072db2ab59a25296d42ec0d75ed443d532b177c455fefff0fdfe2",
+    "src/fmcert/sdp.py": "78a255682cca3f1023b49b2d01b394eca82a514edd47e8d4bcf358ed4d3b37bc"
+  },
+  "status": "complete predeclared grid; no configuration or state omitted",
+  "timing_protocol": "single process; solver and system order randomized; no inserted delay; plant condensation, reference paths, endpoint validation, and every interval-Chebyshev plan are outside timed regions"
+}
