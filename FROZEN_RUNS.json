@@ -1,0 +1,142 @@
+{
+  "boundary": {
+    "directory": "results/boundary_moment_diagnostic_v2",
+    "timing_seconds": {
+      "case_grid_maximum": 9.41961900005117,
+      "case_grid_median": 0.5890642704907805,
+      "design_attempt_maximum": 4.664196499856189,
+      "design_attempt_median": 0.07491337496321648,
+      "two_and_three_point_families": {
+        "ablation_case_median": 0.9078314586076885,
+        "ablation_to_reference_total_ratio": 617.219292641116,
+        "ablation_total": 33.978770416695625,
+        "reference_case_median": 0.0022840630263090134,
+        "reference_total": 0.05505137448199093
+      },
+      "wall": 88.98231458291411
+    }
+  },
+  "built_at_utc": "2026-09-20T11:56:34.143416+00:00",
+  "environment": {
+    "clarabel": "0.11.1",
+    "cvxpy": "1.9.2",
+    "installed_solvers": [
+      "CLARABEL",
+      "SCS",
+      "SCIPY",
+      "HIGHS",
+      "OSQP"
+    ],
+    "matplotlib": "3.11.0",
+    "numpy": "2.4.6",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.11.15",
+    "scikit_learn": "1.9.0",
+    "scs": "3.2.11"
+  },
+  "frontier": {
+    "directory": "results/moment_frontier_v2",
+    "total_design_seconds": 61.029733600560576,
+    "wall_seconds": 61.04540341696702
+  },
+  "jacobi": {
+    "certificate_product_ratio_to_interval_chebyshev": 0.6136499993450096,
+    "directory": "results/constrained_mpc_jacobi_pilot"
+  },
+  "main": {
+    "candidate_grid_design_seconds": {
+      "maximum": 8.96901599992998,
+      "median": 0.570158916991204
+    },
+    "directory": "results/independent_end_to_end_v7",
+    "wall_seconds": 87.34712779195979
+  },
+  "mpc": {
+    "directory": "results/constrained_mpc_v1",
+    "end_to_end_products": {
+      "certificate": 510169,
+      "cg": 12520,
+      "interval_chebyshev": 1200219
+    },
+    "timing": {
+      "aggregate": {
+        "certificate": {
+          "mean_microseconds": 753.5543280649927,
+          "median_microseconds": 72.125
+        },
+        "cg": {
+          "mean_microseconds": 21.941326440177253,
+          "median_microseconds": 16.625
+        },
+        "direct": {
+          "mean_microseconds": 20.98326927621861,
+          "median_microseconds": 16.167
+        },
+        "interval_chebyshev": {
+          "mean_microseconds": 1943.6109093057607,
+          "median_microseconds": 422.458
+        }
+      },
+      "certificate_mean_path_wins": 42,
+      "configurations": [
+        {
+          "certificate_mean_microseconds": 1306.5723556521739,
+          "certificate_median_microseconds": 108.875,
+          "chebyshev_mean_microseconds": 2272.8935130434784,
+          "chebyshev_median_microseconds": 495.52049999999997,
+          "horizon": 20,
+          "plant": "double_integrator",
+          "systems": 230
+        },
+        {
+          "certificate_mean_microseconds": 1466.4853766816143,
+          "certificate_median_microseconds": 296.042,
+          "chebyshev_mean_microseconds": 2947.0049587443946,
+          "chebyshev_median_microseconds": 662.083,
+          "horizon": 40,
+          "plant": "double_integrator",
+          "systems": 223
+        },
+        {
+          "certificate_mean_microseconds": 1453.1954092165897,
+          "certificate_median_microseconds": 497.583,
+          "chebyshev_mean_microseconds": 3106.4026322580644,
+          "chebyshev_median_microseconds": 965.041,
+          "horizon": 60,
+          "plant": "double_integrator",
+          "systems": 217
+        },
+        {
+          "certificate_mean_microseconds": 78.47096896551723,
+          "certificate_median_microseconds": 35.312,
+          "chebyshev_mean_microseconds": 1109.7907931034483,
+          "chebyshev_median_microseconds": 172.8955,
+          "horizon": 20,
+          "plant": "damped_oscillator",
+          "systems": 232
+        },
+        {
+          "certificate_mean_microseconds": 121.90650619469028,
+          "certificate_median_microseconds": 48.021,
+          "chebyshev_mean_microseconds": 1035.9380796460177,
+          "chebyshev_median_microseconds": 175.813,
+          "horizon": 40,
+          "plant": "damped_oscillator",
+          "systems": 226
+        },
+        {
+          "certificate_mean_microseconds": 140.1554884955752,
+          "certificate_median_microseconds": 57.4165,
+          "chebyshev_mean_microseconds": 1265.5695407079645,
+          "chebyshev_median_microseconds": 198.60399999999998,
+          "horizon": 60,
+          "plant": "damped_oscillator",
+          "systems": 226
+        }
+      ],
+      "paths": 48
+    }
+  },
+  "package_status": "version 2.0.0 release package",
+  "timing_policy": "Frozen observations from one local run; machine-, load-, library-, and run-dependent; not a correctness criterion."
+}

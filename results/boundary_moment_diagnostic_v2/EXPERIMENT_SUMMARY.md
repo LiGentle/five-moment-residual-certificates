@@ -21,7 +21,7 @@ All 12 early acceptances outside the two- and three-point families at
 tolerance `1e-2` were unchanged.  Every lost acceptance came from the
 two- or three-point families.
 
-Across those two families, the reference run used 0.102 s for the candidate grids, whereas the ablation used 86.55 s (850 times as long).
+Across those two families, the reference run used 0.055 s for the candidate grids, whereas the ablation used 33.98 s (617 times as long).
 
 The result separates safety from numerical sharpness: the certificate
 and fallback remain safe without the shortcut, but reliable tight-target

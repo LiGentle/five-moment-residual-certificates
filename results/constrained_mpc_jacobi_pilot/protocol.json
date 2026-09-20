@@ -54,7 +54,7 @@
     "experiments/test_constrained_mpc_jacobi.py": "e74307e3491322234a068481c3cd2cbc45b59569b46ec195a017c3afc3e8a452",
     "src/fmcert/__init__.py": "c90adde00e9c35a0f106848e7753cc9ee565d98e9345a7f8451e1e09551545fa",
     "src/fmcert/algorithm.py": "cff58434fa359a76d987a86b35138e167513b421f564a79dd38d5bca330df14a",
-    "src/fmcert/baselines.py": "a311b5aedeb77b9a562f0b26471cfb5626c4ae0c1b8ec9a4d9545f8d835a28dd",
+    "src/fmcert/baselines.py": "4edcd17e8ffb51fad44fa4c1a189924c3ba5cb220d593f266cc6ae416a9b445f",
     "src/fmcert/moments.py": "05bbb237810072db2ab59a25296d42ec0d75ed443d532b177c455fefff0fdfe2",
     "src/fmcert/sdp.py": "78a255682cca3f1023b49b2d01b394eca82a514edd47e8d4bcf358ed4d3b37bc"
   },

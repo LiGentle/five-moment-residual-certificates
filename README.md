@@ -1,56 +1,87 @@
-# Online Resource 1: Code and Numerical Data
+# Code and Numerical Data for Polynomial Iteration with Five-Moment Residual Certificates
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22733853.svg)](https://doi.org/10.5281/zenodo.22733853)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22857908.svg)](https://doi.org/10.5281/zenodo.22857908)
 
-This repository is the public development mirror of the version 1.0.0
-reproducibility archive preserved on Zenodo.  The Zenodo record is the
-authoritative frozen release for the manuscript.
+- **Article:** *Polynomial Iteration with Five-Moment Residual Certificates*
+- **Journal:** *Journal of Optimization Theory and Applications*
+- **Author:** Jintao Li
+- **Version:** 2.0.0
+- **Version DOI:** https://doi.org/10.5281/zenodo.22857908
+- **Concept DOI (all versions):** https://doi.org/10.5281/zenodo.22733852
 
-**Article:** *Polynomial Iteration with Five-Moment Residual Certificates*  
-**Journal:** *Journal of Optimization Theory and Applications*  
-**Author:** Jintao Li  
-**Affiliation:** NUS (Chongqing) Research Institute, Chongqing, China  
-**Correspondence:** e0622340@u.nus.edu
+This repository is the public development mirror of Online Resource 1 version
+2.0.0.  The authoritative frozen release is preserved on Zenodo under the
+version-specific DOI above.  The version 2.0.0 files, provenance metadata, and
+numerical snapshot in this repository correspond to that archived release.
 
-This archive contains the implementation, tests, frozen row-level results,
-and the boundary-moment, observation-depth, and constrained predictive-control
-experiments reported in the paper.
+## Frozen environment
 
-## Environment
+The v2 frozen computations used Python 3.11.15 on macOS arm64 and the exact
+package versions in `requirements-lock.txt`.  In particular, the numerical
+path used NumPy 2.4.6, CVXPY 1.9.2, Clarabel 0.11.1, SCS 3.2.11,
+scikit-learn 1.9.0, and Matplotlib 3.11.0.
 
-The reported computations used Python 3.11.15 on macOS arm64.  Install the
-recorded package versions and the local package from the archive root:
-
-```bash
-python -m pip install -r requirements-lock.txt
-python -m pip install -e . --no-deps
-```
-
-Before running the experiments, verify that CVXPY lists `CLARABEL` among its
-installed solvers:
+Create an isolated environment and install the package from the archive root:
 
 ```bash
-python -c "import cvxpy as cp; assert 'CLARABEL' in cp.installed_solvers()"
+python3.11 -m venv .venv
+.venv/bin/python -m pip install -r requirements-lock.txt
+.venv/bin/python -m pip install -e . --no-deps
 ```
 
-## Tests
+## Verification
+
+Verify the release metadata, frozen scientific summaries, embedded source
+hashes, figure/data links, and whole-archive checksums with:
+
+```bash
+python tools/verify_release.py
+shasum -a 256 -c SHA256SUMS
+```
+
+Run the test suite with:
 
 ```bash
 python -m pytest tests/test_fmcert.py -q
 PYTHONPATH=src:experiments python experiments/test_vectorized_sdp.py
 PYTHONPATH=src:experiments python -m pytest \
-  experiments/test_constrained_mpc.py -q
-PYTHONPATH=src:experiments python -m pytest \
+  experiments/test_constrained_mpc.py \
   experiments/test_constrained_mpc_jacobi.py -q
 ```
 
-The expected results are 14 passed tests with no skips and two successful
-vectorized-assembly tests, followed by four constrained-control tests.  A solver
-may issue an inaccuracy warning on an ill-conditioned test; the returned
-polynomial is still subjected to the independent majorant check tested by the
-suite.
+The frozen release audit obtained 14 passing core tests, two passing
+vectorized-assembly tests, and four passing constrained-control tests.  Two
+CVXPY inaccuracy warnings occur in ill-conditioned certificate tests; the
+independent majorant checks still pass.
 
-## Main Validation
+## Frozen experiments
+
+The following directories were generated from the source files included here,
+under the pinned environment above:
+
+- `results/independent_end_to_end_v7`: 108-case main validation, 540
+  fixed-degree checks, 324 target runs, and 36 robust-moment checks;
+- `results/moment_frontier_v2`: the prespecified 28-case observation-depth
+  diagnostic;
+- `results/boundary_moment_diagnostic_v2`: the 60-case post-development
+  boundary-moment ablation, using the frozen main run in this package as its
+  reference;
+- `results/constrained_mpc_v1`: the 1,354-system box-constrained predictive-
+  control replay and the 48-problem end-to-end comparison;
+- `results/constrained_mpc_jacobi_pilot`: the fixed-Jacobi sensitivity check.
+
+Each applicable JSON summary records `source_sha256`.  Those hashes are checked
+against the source files in this package by `tools/verify_release.py`; they were
+not rewritten to impersonate a different generating source.
+
+The main figures in both PDF and PNG form are stored beside the main CSV files.
+`FIGURE_PROVENANCE.json` links each figure to the exact frozen CSV and generator
+hash.  They use enlarged, embedded TrueType text for legibility in the 12-point
+referee manuscript.  The CSV files remain the authoritative data source.
+
+## Reproduction commands
+
+Main validation:
 
 ```bash
 PYTHONPATH=src python experiments/run_validation.py \
@@ -59,11 +90,16 @@ PYTHONPATH=src python experiments/run_validation.py \
   --output reproduced/independent_end_to_end_v7
 ```
 
-The runner fails if CLARABEL is unavailable or if the full set of 108 cases is
-not constructed.  The frozen output used in the paper is under
-`results/independent_end_to_end_v7`.
+Submission figures from the frozen main-validation CSV files:
 
-## Boundary-Moment Diagnostic
+```bash
+python experiments/render_submission_figures.py \
+  --snapshot results/independent_end_to_end_v7 \
+  --output reproduced/submission_figures
+```
+
+Boundary-moment diagnostic (run after the main validation is present under
+`results/independent_end_to_end_v7`):
 
 ```bash
 PYTHONPATH=src python experiments/run_atomic_ablation.py \
@@ -72,13 +108,7 @@ PYTHONPATH=src python experiments/run_atomic_ablation.py \
   --output reproduced/boundary_moment_diagnostic_v2
 ```
 
-This second run is a post-development diagnostic, not part of the independent
-main validation.  It temporarily disables support recovery within the Python
-process and compares the resulting semidefinite computation with the bundled
-reference results.  Its frozen output is under
-`results/boundary_moment_diagnostic_v2`.
-
-## Observation-Depth Diagnostic
+Observation-depth diagnostic:
 
 ```bash
 PYTHONPATH=src:experiments python experiments/run_moment_frontier.py \
@@ -87,14 +117,10 @@ PYTHONPATH=src:experiments python experiments/run_moment_frontier.py \
   --output reproduced/moment_frontier_v2
 ```
 
-The fixed 28-case subset, all accepted degrees, and the independently checked
-majorants are recorded under `results/moment_frontier_v2`.  The sparse
-vectorized SDP assembly implements the same linear maps as the main code;
-`experiments/test_vectorized_sdp.py` compares the two assemblies directly.
-
-## Box-Constrained Predictive-Control Experiment
+Predictive-control replay:
 
 ```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
 PYTHONPATH=src:experiments python experiments/run_constrained_mpc.py \
   --plants double_integrator,damped_oscillator \
   --horizons 20,40,60 --states 8 --state-radius 0.75 \
@@ -103,17 +129,10 @@ PYTHONPATH=src:experiments python experiments/run_constrained_mpc.py \
   --output reproduced/constrained_mpc_v1
 ```
 
-This run generates 48 box-constrained problems.  It first replays the Newton
-systems on a direct reference path, with every interval-Chebyshev plan
-precomputed outside the timed region, and then solves every problem again with
-each method following its own barrier-Newton and Armijo path.  Frozen
-system-level, timing, and end-to-end data are under
-`results/constrained_mpc_v1`.  Timing is single-process Python timing and will
-vary by machine; no communication latency is inserted.
-
-## Fixed-Jacobi Sensitivity Check
+Fixed-Jacobi sensitivity check:
 
 ```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
 PYTHONPATH=src:experiments python \
   experiments/run_constrained_mpc_jacobi_pilot.py \
   --horizons 20,40,60 --barrier-weights 0.1,0.03,0.01 \
@@ -121,27 +140,25 @@ PYTHONPATH=src:experiments python \
   --output reproduced/constrained_mpc_jacobi_pilot
 ```
 
-This exploratory run applies a fixed symmetric Jacobi transformation.  Its
-declared stopping test uses the preconditioned residual; the ordinary
-Euclidean residual is recorded separately and does not inherit the 0.05
-bound.  Full definitions and limitations are recorded in
-`results/constrained_mpc_jacobi_pilot/protocol.json`.
+## Timing policy
 
-`SHA256SUMS` lists the checksum of every other file in this repository.
+Every timing value in this package is the frozen observation from one local
+run.  Wall-clock and microsecond measurements are machine-, load-, library-,
+and run-dependent; exact timing reproduction is neither expected nor used as a
+correctness criterion.  Counts, acceptance decisions, residual checks, and
+coverage results are the platform-independent scientific comparisons.
 
-## Citation
+The accompanying JOTA revision quotes this same frozen snapshot.
+`CONSISTENCY_REPORT.md` lists the exact values and records the completed
+manuscript-alignment check.
 
-Please cite the archived release:
+## Licenses and citation
+
+Python source code is licensed under the MIT License (`LICENSE-CODE`).  Data,
+results, figures, and documentation are licensed under CC BY 4.0
+(`LICENSE-DATA`).  `CITATION.cff` records version 2.0.0 and its version-specific
+DOI.  To identify the exact reproducibility archive, cite:
 
 > Li, J. (2026). *Code and Numerical Data for Polynomial Iteration with
-> Five-Moment Residual Certificates* (Version 1.0.0) [Data set]. Zenodo.
-> https://doi.org/10.5281/zenodo.22733853
-
-Machine-readable citation metadata are provided in `CITATION.cff`.
-
-## License
-
-Python source code is available under the MIT License; see `LICENSE-CODE`.
-Numerical data, numerical results, figures, and documentation are available
-under the Creative Commons Attribution 4.0 International License; see
-`LICENSE-DATA`.  `LICENSE` summarizes the dual-license structure.
+> Five-Moment Residual Certificates* (Version 2.0.0) [Data set]. Zenodo.
+> https://doi.org/10.5281/zenodo.22857908

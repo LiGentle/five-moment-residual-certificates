@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fmcert"
-version = "0.1.0"
+version = "0.2.0"
 description = "Five-moment target-certified polynomial iteration"
 requires-python = ">=3.10"
 dependencies = [

@@ -1,12 +1,14 @@
 cff-version: 1.2.0
-message: "If you use these materials, please cite the archived Zenodo release."
+message: "Please cite the archived version 2.0.0 using its version-specific Zenodo DOI."
 title: "Code and Numerical Data for Polynomial Iteration with Five-Moment Residual Certificates"
 type: dataset
 authors:
   - family-names: Li
     given-names: Jintao
-version: 1.0.0
-date-released: 2026-09-13
-doi: 10.5281/zenodo.22733853
+    affiliation: "NUS (Chongqing) Research Institute"
+    orcid: "https://orcid.org/0009-0008-2306-4142"
+version: 2.0.0
+doi: 10.5281/zenodo.22857908
+date-released: 2026-09-20
+url: "https://doi.org/10.5281/zenodo.22857908"
 repository-code: "https://github.com/LiGentle/five-moment-residual-certificates"
-url: "https://doi.org/10.5281/zenodo.22733853"

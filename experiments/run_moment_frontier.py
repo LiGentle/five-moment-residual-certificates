@@ -3,7 +3,7 @@
 This diagnostic asks how many initial Chebyshev products are worth taking
 before a fixed continuation polynomial is selected.  It uses a deterministic
 subset of the benchmark panel: every two-dimensional Poisson case and every
-ridge-regression case with prescribed condition number 30 or 100.  No case is
+ridge-regression case with prescribed enclosure ratio 30 or 100.  No case is
 selected using its outcome.
 
 The SDP value is monotone in the candidate degree.  We therefore locate its
@@ -46,7 +46,7 @@ class FrontierRow:
     family: str
     source: str
     dimension: int
-    condition: float
+    enclosure_ratio: float
     tolerance: float
     observation_depth: int
     chebyshev_horizon: int
@@ -125,7 +125,7 @@ def _frontier_at_depth(
             family=case.family,
             source=case.source,
             dimension=len(case.eigenvalues),
-            condition=case.interval[1] / case.interval[0],
+            enclosure_ratio=case.interval[1] / case.interval[0],
             tolerance=tolerance,
             observation_depth=depth,
             chebyshev_horizon=budget,
@@ -183,7 +183,7 @@ def _frontier_at_depth(
             family=case.family,
             source=case.source,
             dimension=len(case.eigenvalues),
-            condition=case.interval[1] / case.interval[0],
+            enclosure_ratio=case.interval[1] / case.interval[0],
             tolerance=tolerance,
             observation_depth=depth,
             chebyshev_horizon=budget,
@@ -221,7 +221,7 @@ def _frontier_at_depth(
             family=case.family,
             source=case.source,
             dimension=len(case.eigenvalues),
-            condition=case.interval[1] / case.interval[0],
+            enclosure_ratio=case.interval[1] / case.interval[0],
             tolerance=tolerance,
             observation_depth=depth,
             chebyshev_horizon=budget,
@@ -247,7 +247,7 @@ def _frontier_at_depth(
         family=case.family,
         source=case.source,
         dimension=len(case.eigenvalues),
-        condition=case.interval[1] / case.interval[0],
+        enclosure_ratio=case.interval[1] / case.interval[0],
         tolerance=tolerance,
         observation_depth=depth,
         chebyshev_horizon=budget,
@@ -309,7 +309,7 @@ def _summary(rows: list[FrontierRow], seed: int, size: int) -> dict[str, object]
         "tolerance": rows[0].tolerance,
         "selection_rule": (
             "all two-dimensional Poisson cases and all breast-cancer/wine "
-            "ridge cases with prescribed condition number 30 or 100"
+            "ridge cases with prescribed enclosure ratio 30 or 100"
         ),
         "certificate_violations": sum(not row.covered for row in rows),
         "maximum_sdp_to_operational_horizon_gap": max(

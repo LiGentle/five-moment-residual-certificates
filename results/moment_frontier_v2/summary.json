@@ -65,19 +65,19 @@
   "number_of_instances_with_tied_best_depth": 8,
   "rows": 168,
   "seed": 20260919,
-  "selection_rule": "all two-dimensional Poisson cases and all breast-cancer/wine ridge cases with prescribed condition number 30 or 100",
+  "selection_rule": "all two-dimensional Poisson cases and all breast-cancer/wine ridge cases with prescribed enclosure ratio 30 or 100",
   "size": 384,
   "source_sha256": {
-    "experiments/run_moment_frontier.py": "8781a7f7df98611ad5714a985138e87ac15c42592488ad26698f1357ad04dd47",
+    "experiments/run_moment_frontier.py": "fca1fa25fc811d30bd69d7b7425e5c23c53c40b01ea7ede47331d846b0c280b0",
     "experiments/vectorized_sdp.py": "848c891075f0e48ce90e0f5c1716ffacf3f2a24047b353f98e9c87f0c07225f4",
     "src/fmcert/__init__.py": "c90adde00e9c35a0f106848e7753cc9ee565d98e9345a7f8451e1e09551545fa",
     "src/fmcert/algorithm.py": "cff58434fa359a76d987a86b35138e167513b421f564a79dd38d5bca330df14a",
-    "src/fmcert/baselines.py": "a311b5aedeb77b9a562f0b26471cfb5626c4ae0c1b8ec9a4d9545f8d835a28dd",
+    "src/fmcert/baselines.py": "4edcd17e8ffb51fad44fa4c1a189924c3ba5cb220d593f266cc6ae416a9b445f",
     "src/fmcert/moments.py": "05bbb237810072db2ab59a25296d42ec0d75ed443d532b177c455fefff0fdfe2",
     "src/fmcert/sdp.py": "78a255682cca3f1023b49b2d01b394eca82a514edd47e8d4bcf358ed4d3b37bc"
   },
   "status": "prespecified observation-depth diagnostic",
   "tolerance": 0.05,
-  "total_design_seconds": 178.29124170728028,
-  "wall_seconds": 178.35403670900268
+  "total_design_seconds": 61.029733600560576,
+  "wall_seconds": 61.04540341696702
 }

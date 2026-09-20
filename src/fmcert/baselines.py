@@ -104,8 +104,8 @@ def run_minres(
         previous_direction = direction
         direction = (vector - old_epsilon * older_direction - delta * previous_direction) / gamma
         solution += phi * direction
-        residual = initial - spectrum * solution
-        if float(np.linalg.norm(residual)) <= tolerance * beta1:
+        if abs(phi_bar) <= tolerance * beta1:
+            residual = initial - spectrum * solution
             return IterativeRun("minres", products, 2 * products, True, float(np.linalg.norm(residual)) / beta1)
         if beta <= np.finfo(float).eps * beta1:
             break

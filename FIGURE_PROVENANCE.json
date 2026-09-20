@@ -1,0 +1,23 @@
+{
+  "figures": {
+    "certificate_improvement": {
+      "data_file": "results/independent_end_to_end_v7/design_results.csv",
+      "data_sha256": "f62b83317e0d273b81e8b25080c2268e05c62eb579c4b5950f2d1ed7e77f3aba",
+      "pdf_file": "results/independent_end_to_end_v7/certificate_improvement.pdf",
+      "pdf_sha256": "a6d2c3b84985a17cd8c3ac44d4b6c28642ac85f1a8c4f40f333946627cbd7cd7",
+      "png_file": "results/independent_end_to_end_v7/certificate_improvement.png",
+      "png_sha256": "4be96d40ba4eb2c80d7e8fadb7f434371f030bb22a82b6bbbd18fa4875e92ae3"
+    },
+    "target_activation": {
+      "data_file": "results/independent_end_to_end_v7/target_results.csv",
+      "data_sha256": "0293233e01605df8e021688a72ca715a082a34824581dafc571ddeefb5f17f24",
+      "pdf_file": "results/independent_end_to_end_v7/target_activation.pdf",
+      "pdf_sha256": "83c2eca40f512c71bad07defa6c393471743dcb801447ae3cfbde8bebee19b8f",
+      "png_file": "results/independent_end_to_end_v7/target_activation.png",
+      "png_sha256": "360ee354ea7f56e1dee23c250f0a6cb201a03ebff3089df7754c6d65a23bed96"
+    }
+  },
+  "frozen_run": "results/independent_end_to_end_v7",
+  "generator": "experiments/render_submission_figures.py",
+  "generator_sha256": "43a3f49a2da89a3efe7e3055d954bff6449ffdf159ddc46ad007b9f17052cde6"
+}

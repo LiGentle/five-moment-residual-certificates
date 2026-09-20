@@ -3,31 +3,31 @@
     "2": {
       "cases": 108,
       "fraction_strictly_below_chebyshev_bound": 1.0,
-      "median_certificate_to_actual_nonzero": 1.0000000000044416,
+      "median_certificate_to_actual_nonzero": 1.0000000000029114,
       "median_certificate_to_chebyshev_bound": 0.06411227514415885
     },
     "3": {
       "cases": 108,
       "fraction_strictly_below_chebyshev_bound": 1.0,
-      "median_certificate_to_actual_nonzero": 1.9359077955984596,
+      "median_certificate_to_actual_nonzero": 1.4894538490642104,
       "median_certificate_to_chebyshev_bound": 0.04215821016859955
     },
     "4": {
       "cases": 108,
       "fraction_strictly_below_chebyshev_bound": 1.0,
-      "median_certificate_to_actual_nonzero": 2.520220270404157,
+      "median_certificate_to_actual_nonzero": 2.1768015051574237,
       "median_certificate_to_chebyshev_bound": 0.04757277893039233
     },
     "6": {
       "cases": 108,
       "fraction_strictly_below_chebyshev_bound": 1.0,
-      "median_certificate_to_actual_nonzero": 2.042668583007675,
+      "median_certificate_to_actual_nonzero": 1.8820985714657774,
       "median_certificate_to_chebyshev_bound": 0.05525914503040017
     },
     "8": {
       "cases": 108,
       "fraction_strictly_below_chebyshev_bound": 1.0,
-      "median_certificate_to_actual_nonzero": 2.0148417565259313,
+      "median_certificate_to_actual_nonzero": 1.8498188441815198,
       "median_certificate_to_chebyshev_bound": 0.058792883375925455
     }
   },
@@ -70,8 +70,8 @@
     }
   },
   "candidate_grid_design_seconds": {
-    "maximum": 20.297937750001438,
-    "median": 1.177825313003268
+    "maximum": 8.96901599992998,
+    "median": 0.570158916991204
   },
   "certificate_violations": 0,
   "configuration": {
@@ -124,10 +124,10 @@
   "robust_violations": 0,
   "seed": 20260919,
   "source_sha256": {
-    "experiments/run_validation.py": "2b3bffae5875f2a5331916f21ffd6cfd10e0b3e32759d8ed9344097e826e542f",
+    "experiments/run_validation.py": "410bc05ea6f61986fb921cc9b112cbd299e288b39234048724055cfdda4b8f9c",
     "src/fmcert/__init__.py": "c90adde00e9c35a0f106848e7753cc9ee565d98e9345a7f8451e1e09551545fa",
     "src/fmcert/algorithm.py": "cff58434fa359a76d987a86b35138e167513b421f564a79dd38d5bca330df14a",
-    "src/fmcert/baselines.py": "a311b5aedeb77b9a562f0b26471cfb5626c4ae0c1b8ec9a4d9545f8d835a28dd",
+    "src/fmcert/baselines.py": "4edcd17e8ffb51fad44fa4c1a189924c3ba5cb220d593f266cc6ae416a9b445f",
     "src/fmcert/moments.py": "05bbb237810072db2ab59a25296d42ec0d75ed443d532b177c455fefff0fdfe2",
     "src/fmcert/sdp.py": "78a255682cca3f1023b49b2d01b394eca82a514edd47e8d4bcf358ed4d3b37bc"
   },
@@ -135,5 +135,5 @@
   "target_certificate_violations": 0,
   "target_failures": 0,
   "target_runs": 324,
-  "wall_seconds": 189.35530216700863
+  "wall_seconds": 87.34712779195979
 }

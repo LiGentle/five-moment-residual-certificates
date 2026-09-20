@@ -5,7 +5,7 @@ The case subset and tolerance were specified by the script before the run. The h
 - Cases: 28
 - Target relative residual: 0.05
 - Certificate violations: 0
-- Total local SDP time: 178.29 s
+- Total local SDP time: 61.03 s
 
 | Initial products s | Median horizon | Median horizon / Chebyshev | Strictly below Chebyshev | Median saving when improved |
 |---:|---:|---:|---:|---:|

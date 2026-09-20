@@ -6,12 +6,12 @@ before timing, and no artificial delay is used.
 
 | Plant | Horizon | Systems | Acceptance | Median cert/Cheb | Mean cert/Cheb | Median gated/Cheb |
 |---|---:|---:|---:|---:|---:|---:|
-| double_integrator | 20 | 230 | 43.9% | 0.220 | 0.563 | 0.222 |
-| double_integrator | 40 | 223 | 35.9% | 0.439 | 0.530 | 0.444 |
-| double_integrator | 60 | 217 | 35.9% | 0.520 | 0.479 | 0.517 |
-| damped_oscillator | 20 | 232 | 66.8% | 0.210 | 0.073 | 0.204 |
-| damped_oscillator | 40 | 226 | 57.5% | 0.232 | 0.113 | 0.224 |
-| damped_oscillator | 60 | 226 | 56.2% | 0.237 | 0.117 | 0.228 |
+| double_integrator | 20 | 230 | 43.9% | 0.220 | 0.575 | 0.217 |
+| double_integrator | 40 | 223 | 35.9% | 0.447 | 0.498 | 0.446 |
+| double_integrator | 60 | 217 | 35.9% | 0.516 | 0.468 | 0.517 |
+| damped_oscillator | 20 | 232 | 66.8% | 0.204 | 0.071 | 0.200 |
+| damped_oscillator | 40 | 226 | 57.5% | 0.273 | 0.118 | 0.240 |
+| damped_oscillator | 60 | 226 | 56.2% | 0.289 | 0.111 | 0.232 |
 
 Adaptive CG and direct factorization are reported in `summary.json`; 
 the certificate method is not claimed to outperform them. The 

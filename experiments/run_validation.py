@@ -482,7 +482,7 @@ def summarize(
     by_degree: dict[str, object] = {}
     for degree in sorted({int(row["degree"]) for row in design_rows}):
         rows = [row for row in design_rows if int(row["degree"]) == degree]
-        nonzero = [row for row in rows if float(row["certificate"]) > 1.0e-14]
+        nonzero = [row for row in rows if not bool(row.get("atomic_pattern", False))]
         by_degree[str(degree)] = {
             "cases": len(rows),
             "median_certificate_to_chebyshev_bound": _median(
